@@ -1,10 +1,10 @@
 export default {
   text: "#000",
   background: "#fff",
-  primary: "#e63b19",
+  primary: "#0ceac5",
   secondary: "#c70d3a",
-  sidebar: "#eee",
-  borderColor: "rgba(0, 0, 0, 0.15)",
+  sidebar: "#fff",
+  borderColor: "#0ceac5",
   modes: {
     dark: {
       text: "#fff",
