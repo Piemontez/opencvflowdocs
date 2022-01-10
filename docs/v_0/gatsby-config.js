@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/docs/v_0`,
   siteMetadata: {
     title: `OpenCV-Flow`,
     name: `OpenCV-Flow`,
