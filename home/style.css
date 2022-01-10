@@ -7,7 +7,7 @@ body {
     background-size: 100% auto;
     height: auto;
     overflow: hidden;
-    padding-top: 20px;
+    padding-top: 10px;
     position: relative;
 }
 
@@ -878,4 +878,29 @@ div.wrapper section.portfolia div.penination a{
     font-weight: 600;
     color: #4c797d;
     text-decoration: none;
+}
+
+
+pre {
+    background: #333;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+pre.code {
+    margin: 20px 25px;
+    border-radius: 4px;
+    border: 1px solid #292929;
+    position: relative;
+
+    font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+    display: block;
+    margin: 0 0 0 60px;
+    padding: 15px 16px 14px;
+    border-left: 1px solid #555;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 19px;
+    color: #ffa726;
 }

@@ -1,147 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OpenCV - Flow</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18861122-3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-18861122-3"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-18861122-3');
+      gtag("config", "UA-18861122-3");
     </script>
 
-    
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Croissant+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="blue">
-                <img src="img/header-shepe-blue.png" alt="">
+      <header class="header">
+        <div class="blue">
+          <img src="img/header-shepe-blue.png" alt="" />
+        </div>
+        <div class="white">
+          <img src="img/header-shepe-white.png" alt="" />
+        </div>
+        <div class="container">
+          <img class="shepe1" src="img/shepe1.png" alt="" />
+          <img class="shepe2" src="img/shepe2.png" alt="" />
+          <img class="shepe3" src="img/shepe2.png" alt="" />
+          <img class="shepe4" src="img/shepe2.png" alt="" />
+          <img class="shepe5" src="img/shepe1.png" alt="" />
+          <img class="shepe6" src="img/shepe2.png" alt="" />
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="logo">
+                <h2><a href="/" target="_blank">OpenCV-Flow</a></h2>
+              </div>
             </div>
-            <div class="white">
-                <img src="img/header-shepe-white.png" alt="">
+            <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="menu">
+                <ul class="nav navbar-nav">
+                  <li><a href="/docs/v_0">Docs</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="container">
-                <img class="shepe1" src="img/shepe1.png" alt="">
-                <img class="shepe2" src="img/shepe2.png" alt="">
-                <img class="shepe3" src="img/shepe2.png" alt="">
-                <img class="shepe4" src="img/shepe2.png" alt="">
-                <img class="shepe5" src="img/shepe1.png" alt="">
-                <img class="shepe6" src="img/shepe2.png" alt="">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="logo">
-                            <h2><a href="http://thalamus.digital" target="_blank">Thalamus</a></h2>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                        <div class="menu">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header-text">
+                <h1>Computer Vision IDE</h1>
+                <p>
+                  OpenCV-Flow is designed for students, teachers and javascript
+                  developers..
+                </p>
+                <!--<button>Read More</button>-->
+                <button
+                  style="background-color: #fbfbfb; color: #455a64"
+                  onclick="window.location = '/docs/v_0/instalation'"
+                >
+                  Install
+                </button>
+                <button
+                  onclick="window.location = 'https://github.com/Piemontez/opencvflow'"
+                >
+                  Get Source
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="another-text">
+                <h3>Three Simple Steps</h3>
+                <p>
+                  Open Computer Vision - Flow is an IDE for computer vision
+                  studies and testing.<br />
+                  In just 3 steps you can visualize the result of different
+                  computer vision techniques.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="development">
+        <div class="blue">
+          <img src="img/development-shepe-blue.png" alt="" />
+        </div>
+        <div class="white">
+          <img src="img/development-shepe-white.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="design-development one">
+                <i class="material-icons">lightbulb_outline</i>
+                <h2>Research</h2>
+                <p>Identify the techniques that will be used in the project.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="design-development two">
+                <i class="material-icons">swap_calls</i>
+                <h2>Flow</h2>
+                <p>Draw your project flowchart with OpenCV-Flow components</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="design-development three">
+                <i class="material-icons">remove_red_eye</i>
+                <h2>Visualize</h2>
+                <p>Visualize the result of techniques applied in real time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div
+                class="work-images"
+                style="
+                  -webkit-transform: scale(0.9) perspective(800px)
+                    rotateY(+41deg) rotateX(5deg) rotate(2deg);
+                  transform: scale(0.9) perspective(800px) rotateY(+41deg)
+                    rotateX(5deg) rotate(2deg);
+                "
+              >
+                <img src="img/system_01.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="work-text-full">
+                <div class="work-text">
+                  <h2>How It Works?</h2>
+                  <p>
+                    Through flowcharts you can chain different computer vision
+                    techniques and run your application to visualize the effect
+                    of these techniques on a particular video or image.
+                  </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-text">
-                            <h1>OpenCV-Flow 0.1.1</h1>
-                            <p>Project started, only alpha version is available.</p>
-                            <!--<button>Read More</button>-->
-                            <button onclick="window.location = 'https://github.com/Piemontez/opencvflow'">
-                                Get Source
-                            </button>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="work-text-full">
+                <div class="work-text">
+                  <h2>Custom Components</h2>
+                  <p>
+                    OpenCV-Flow lets you add customizable components to the IDE.
+                    Nodes are processed using the "process" function. Node input
+                    data can be accessed via this.inputs. The outputs are
+                    informed in this.sources property. And to display on screen
+                    call the output function.
+                  </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="another-text">
-                            <h3>Three Simple Steps</h3>
-                            <p>
-                                Open Computer Vision - Flow is an IDE for computer vision studies and testing.<br> 
-                                In just 3 steps you can visualize the result of different computer vision techniques.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </header>
-        <section class="development">
-            <div class="blue">
-                <img src="img/development-shepe-blue.png" alt="">
+            <div class="col-md-6">
+              <div class="work-images">
+<pre class="code">
+import cv, { Mat } from 'opencv-ts';
+
+export class SobelComponent extends CVFIOComponent {
+  static processor = class SobelProcessor extends CVFNodeProcessor {
+    async proccess() {
+      this.sources = [];
+      for (const src of this.inputs) {
+        const dst = new cv.Mat(src.rows, src.cols, cv.CV_8UC1);
+
+        cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
+        cv.Sobel(src,dst, cv.CV_8U, 1, 0, 3, 1, 0, cv.BORDER_DEFAULT);
+
+        this.sources.push(dst);
+        this.output(dst);
+      }
+    }
+  };
+}
+</pre>
+              </div>
             </div>
-            <div class="white">
-                <img src="img/development-shepe-white.png" alt="">
-            </div>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="design-development one">
-                            <i class="material-icons">lightbulb_outline</i>
-                            <h2>Research</h2>
-                            <p>Identify the techniques that will be used in the project.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="design-development two">
-                            <i class="material-icons">swap_calls</i>
-                            <h2>Flow</h2>
-                            <p>Draw your project flowchart with OpenCV-Flow components</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="design-development three">
-                            <i class="material-icons">remove_red_eye</i>
-                            <h2>Visualize</h2>
-                            <p>Visualize the result of techniques applied in real time</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="works">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="work-images" style="
-                            -webkit-transform: scale(0.9) perspective(800px) rotateY(+41deg) rotateX(5deg) rotate(2deg); 
-                            transform: scale(0.9) perspective(800px) rotateY(+41deg) rotateX(5deg) rotate(2deg);">
-                            <img src="img/system_01.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="work-text-full">
-                            <div class="work-text">
-                                <h2>How It Works?</h2>
-                                <p>
-                                    Through flowcharts you can chain different computer vision techniques and 
-                                    run your application to visualize the effect of these techniques on a particular video or image.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--
+          </div>
+        </div>
+        <br />
+        <br />
+      </section>
+      <!--
         <section class="portfolia">
             <div class="container">
                 <div class="row">
@@ -210,7 +288,6 @@
                 </div>
             </div>
         </section>
-        -->
         <section id="contact" class="contact">
             <div class="blue">
                 <img src="img/contact-shepe-blue.png" alt="">
@@ -255,66 +332,61 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="footer-icon">
-                            <h2>Thalamus</h2>
-                            <p>
-                                <!--<a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>-->
-                                <a href="https://www.linkedin.com/company/13013885" target="_blank" ><i aria-hidden="true" class="fa fa-linkedin"></i></a>
-                                <!--<a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a>
+        -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <div class="footer-icon">
+                <h2>By Piemontez</h2>
+                <p>
+                  <!--<a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>-->
+                  <a
+                    href="https://www.linkedin.com/in/piemontez/"
+                    target="_blank"
+                    ><i aria-hidden="true" class="fa fa-linkedin"></i
+                  ></a>
+                  <!--<a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a>
                                 <a href="#"><i aria-hidden="true" class="fa fa-behance"></i></a>
                                 <a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a>-->
-                            </p>
-                            <h5>&copy; All Right Reserved. Thalamus 2019</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="footer-text">
-                            <div class="row">
-                                    <!--
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="footer-text-single">
-                                        <h3>About Us</h3>
-                                        <p><a href="#">Our Team</a></p>
-                                        <p><a href="#">Company</a></p>
-                                        <p><a href="#">Jobs</a></p>
-                                        <p><a href="#">Newsletter</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="footer-text-single">
-                                        <h3>Help Center</h3>
-                                        <p><a href="#">Documentations</a></p>
-                                        <p><a href="#">Tutorials</a></p>
-                                        <p><a href="#">Term Of Use</a></p>
-                                        <p><a href="#">Privecy Policy</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="footer-text-single">
-                                        <h3>Tools</h3>
-                                        <p><a href="#">Create Account</a></p>
-                                        <p><a href="#">Log In</a></p>
-                                        <p><a href="#">Services</a></p>
-                                        <p><a href="#">Sitemap</a></p>
-                                    </div>
-                                </div>
-                        -->
-                                <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-9 col-sm-offset-6">
-                                    <div class="footer-text-single">
-                                        <h3>Get In Touch</h3>
-                                        <p><a href="#">rafael@thalamus.digital</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </p>
+                <h5>OpenCV-Flow is a Source Project</h5>
+              </div>
             </div>
-        </footer>
+            <div class="col-md-7">
+              <div class="footer-text">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="footer-text-single">
+                      <h3>Help Center</h3>
+                      <p><a href="/docs/v_0">Documentations</a></p>
+                      <p><a href="/docs/v_0/instalation">Instalation</a></p>
+                      <p><a href="/docs/v_0/components">Components</a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="footer-text-single">
+                      <h3>Visão Computacional</h3>
+                      <p>
+                        <a href="https://visaocomputacional.com.br/">Blog</a>
+                      </p>
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="footer-text-single">
+                      <h3>Thalamus</h3>
+                      <p><a href="http://thalamus.digital/">About</a></p>
+                      <p><a href="https://thalamus.digital/team/">Team</a></p>
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -322,65 +394,71 @@
     <script src="js/active.js"></script>
 
     <script>
-        var form = document.getElementById("sunsetContactForm");
-        form.reset();
+      var form = document.getElementById("sunsetContactForm");
+      form.reset();
 
-        $('#sunsetContactForm').on('submit',function (e) {
-            'use strict';
-            e.preventDefault();
+      $("#sunsetContactForm").on("submit", function (e) {
+        "use strict";
+        e.preventDefault();
 
-            $('#submit').attr('disabled', 'disabled')
+        $("#submit").attr("disabled", "disabled");
 
-            //On Submit Form Validation events
-            var select_name=$('#name');
-            var select_email=$('#email');
-            var select_message=$('#message');
+        //On Submit Form Validation events
+        var select_name = $("#name");
+        var select_email = $("#email");
+        var select_message = $("#message");
 
-            var name = select_name.val();
-            var email = select_email.val();
-            var message = select_message.val();
+        var name = select_name.val();
+        var email = select_email.val();
+        var message = select_message.val();
 
-            $('#message_sys').html('');
-            if(!name || !email || !message) {
-                if (name === '') {
-                    if (!document.getElementById("name-message").hasChildNodes()) {
-                        $('#name-message').append("<span class='text-danger'>The field name is required.</span>");
-                    }
-                }
-
-                if (email === '') {
-                    if (!document.getElementById("email-message").hasChildNodes()) {
-                        $('#email-message').append("<span class='text-danger'>The field email is required.</span>");
-                    }
-                }
-
-                if (message === '') {
-                    if (!document.getElementById("text-message").hasChildNodes()) {
-                        $('#text-message').append("<span class='text-danger'>The field message is required.</span>");
-                    }
-                }
-                $('#submit').removeAttr('disabled')
-                return;
+        $("#message_sys").html("");
+        if (!name || !email || !message) {
+          if (name === "") {
+            if (!document.getElementById("name-message").hasChildNodes()) {
+              $("#name-message").append(
+                "<span class='text-danger'>The field name is required.</span>"
+              );
             }
+          }
 
-            $('#message_sys').html('Sending message.');
-        
-            $.ajax({
-                method: "POST",
-                url: "http://thalamus.digital:9091/",
-                data: { nome: name, email: email, message: message }
-                })
-            .done(function( msg ) {
-                $('#submit').removeAttr('disabled')
-                if ((msg||{}).send) {
-                    $('#message_sys').html('Message sent successfully.');
-                    $('#sunsetContactForm').hide()
-                } else {
-                    $('#message_sys').html('sorry, an error has occurred. Try again later.');
-                }
-            });
+          if (email === "") {
+            if (!document.getElementById("email-message").hasChildNodes()) {
+              $("#email-message").append(
+                "<span class='text-danger'>The field email is required.</span>"
+              );
+            }
+          }
+
+          if (message === "") {
+            if (!document.getElementById("text-message").hasChildNodes()) {
+              $("#text-message").append(
+                "<span class='text-danger'>The field message is required.</span>"
+              );
+            }
+          }
+          $("#submit").removeAttr("disabled");
+          return;
+        }
+
+        $("#message_sys").html("Sending message.");
+
+        $.ajax({
+          method: "POST",
+          url: "http://thalamus.digital:9091/",
+          data: { nome: name, email: email, message: message },
+        }).done(function (msg) {
+          $("#submit").removeAttr("disabled");
+          if ((msg || {}).send) {
+            $("#message_sys").html("Message sent successfully.");
+            $("#sunsetContactForm").hide();
+          } else {
+            $("#message_sys").html(
+              "sorry, an error has occurred. Try again later."
+            );
+          }
         });
-    </script>        
-</body>
-
+      });
+    </script>
+  </body>
 </html>
