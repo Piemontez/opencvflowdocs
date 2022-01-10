@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenCV - Flow</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18861122-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-18861122-3');
+    </script>
+
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="blue">
+                <img src="img/header-shepe-blue.png" alt="">
+            </div>
+            <div class="white">
+                <img src="img/header-shepe-white.png" alt="">
+            </div>
+            <div class="container">
+                <img class="shepe1" src="img/shepe1.png" alt="">
+                <img class="shepe2" src="img/shepe2.png" alt="">
+                <img class="shepe3" src="img/shepe2.png" alt="">
+                <img class="shepe4" src="img/shepe2.png" alt="">
+                <img class="shepe5" src="img/shepe1.png" alt="">
+                <img class="shepe6" src="img/shepe2.png" alt="">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="logo">
+                            <h2><a href="http://thalamus.digital" target="_blank">Thalamus</a></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div class="menu">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-text">
+                            <h1>OpenCV-Flow 0.1.1</h1>
+                            <p>Project started, only alpha version is available.</p>
+                            <!--<button>Read More</button>-->
+                            <button onclick="window.location = 'https://github.com/Piemontez/opencvflow'">
+                                Get Source
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="another-text">
+                            <h3>Three Simple Steps</h3>
+                            <p>
+                                Open Computer Vision - Flow is an IDE for computer vision studies and testing.<br> 
+                                In just 3 steps you can visualize the result of different computer vision techniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="development">
+            <div class="blue">
+                <img src="img/development-shepe-blue.png" alt="">
+            </div>
+            <div class="white">
+                <img src="img/development-shepe-white.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="design-development one">
+                            <i class="material-icons">lightbulb_outline</i>
+                            <h2>Research</h2>
+                            <p>Identify the techniques that will be used in the project.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="design-development two">
+                            <i class="material-icons">swap_calls</i>
+                            <h2>Flow</h2>
+                            <p>Draw your project flowchart with OpenCV-Flow components</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="design-development three">
+                            <i class="material-icons">remove_red_eye</i>
+                            <h2>Visualize</h2>
+                            <p>Visualize the result of techniques applied in real time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="work-images" style="
+                            -webkit-transform: scale(0.9) perspective(800px) rotateY(+41deg) rotateX(5deg) rotate(2deg); 
+                            transform: scale(0.9) perspective(800px) rotateY(+41deg) rotateX(5deg) rotate(2deg);">
+                            <img src="img/system_01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="work-text-full">
+                            <div class="work-text">
+                                <h2>How It Works?</h2>
+                                <p>
+                                    Through flowcharts you can chain different computer vision techniques and 
+                                    run your application to visualize the effect of these techniques on a particular video or image.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <section class="portfolia">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="port-text">
+                            <h2>What We Did Recently!</h2>
+                            <p>ILorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image1.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image2.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image3.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image4.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image5.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="portfolio-part">
+                            <img src="img/portfolio-image6.jpg" alt="">
+                            <div class="overlay-slide">
+                                <h2>Title Goes Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+        <section id="contact" class="contact">
+            <div class="blue">
+                <img src="img/contact-shepe-blue.png" alt="">
+            </div>
+            <div class="white">
+                <img src="img/contact-shepe-white.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="contact-text">
+                            <h2>Contact US!</h2>
+                            <p>
+                                Meet Our Team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="contact-form">
+                            <p id="message_sys"></p>
+                            <form id="sunsetContactForm" action="http://thalamus.digital:9090" method="post">
+                                <div class="first">
+                                    <input type="text" id="name" name="name" placeholder="Name" autocomplete="off">
+                                    <div id="name-message"></div>
+                                </div>
+                                <div class="email">
+                                    <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off">
+                                    <div id="email-message"></div>
+                                </div>
+                                <div class="message">
+                                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                                    <div id="text-message"></div>
+                                </div>
+                                <div class="checkbox-submit">
+                                    <div class="submit">
+                                        <input type="submit" value="SEND">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-icon">
+                            <h2>Thalamus</h2>
+                            <p>
+                                <!--<a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a>-->
+                                <a href="https://www.linkedin.com/company/13013885" target="_blank" ><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                                <!--<a href="#"><i aria-hidden="true" class="fa fa-dribbble"></i></a>
+                                <a href="#"><i aria-hidden="true" class="fa fa-behance"></i></a>
+                                <a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a>-->
+                            </p>
+                            <h5>&copy; All Right Reserved. Thalamus 2019</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="footer-text">
+                            <div class="row">
+                                    <!--
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="footer-text-single">
+                                        <h3>About Us</h3>
+                                        <p><a href="#">Our Team</a></p>
+                                        <p><a href="#">Company</a></p>
+                                        <p><a href="#">Jobs</a></p>
+                                        <p><a href="#">Newsletter</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="footer-text-single">
+                                        <h3>Help Center</h3>
+                                        <p><a href="#">Documentations</a></p>
+                                        <p><a href="#">Tutorials</a></p>
+                                        <p><a href="#">Term Of Use</a></p>
+                                        <p><a href="#">Privecy Policy</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-6">
+                                    <div class="footer-text-single">
+                                        <h3>Tools</h3>
+                                        <p><a href="#">Create Account</a></p>
+                                        <p><a href="#">Log In</a></p>
+                                        <p><a href="#">Services</a></p>
+                                        <p><a href="#">Sitemap</a></p>
+                                    </div>
+                                </div>
+                        -->
+                                <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-9 col-sm-offset-6">
+                                    <div class="footer-text-single">
+                                        <h3>Get In Touch</h3>
+                                        <p><a href="#">rafael@thalamus.digital</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/active.js"></script>
+
+    <script>
+        var form = document.getElementById("sunsetContactForm");
+        form.reset();
+
+        $('#sunsetContactForm').on('submit',function (e) {
+            'use strict';
+            e.preventDefault();
+
+            $('#submit').attr('disabled', 'disabled')
+
+            //On Submit Form Validation events
+            var select_name=$('#name');
+            var select_email=$('#email');
+            var select_message=$('#message');
+
+            var name = select_name.val();
+            var email = select_email.val();
+            var message = select_message.val();
+
+            $('#message_sys').html('');
+            if(!name || !email || !message) {
+                if (name === '') {
+                    if (!document.getElementById("name-message").hasChildNodes()) {
+                        $('#name-message').append("<span class='text-danger'>The field name is required.</span>");
+                    }
+                }
+
+                if (email === '') {
+                    if (!document.getElementById("email-message").hasChildNodes()) {
+                        $('#email-message').append("<span class='text-danger'>The field email is required.</span>");
+                    }
+                }
+
+                if (message === '') {
+                    if (!document.getElementById("text-message").hasChildNodes()) {
+                        $('#text-message').append("<span class='text-danger'>The field message is required.</span>");
+                    }
+                }
+                $('#submit').removeAttr('disabled')
+                return;
+            }
+
+            $('#message_sys').html('Sending message.');
+        
+            $.ajax({
+                method: "POST",
+                url: "http://thalamus.digital:9091/",
+                data: { nome: name, email: email, message: message }
+                })
+            .done(function( msg ) {
+                $('#submit').removeAttr('disabled')
+                if ((msg||{}).send) {
+                    $('#message_sys').html('Message sent successfully.');
+                    $('#sunsetContactForm').hide()
+                } else {
+                    $('#message_sys').html('sorry, an error has occurred. Try again later.');
+                }
+            });
+        });
+    </script>        
+</body>
+
+</html>

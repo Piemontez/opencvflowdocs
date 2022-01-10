@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  opencvflowsite:
+    image: nginx:latest
+    ports:
+      - ${SYSTEM_PORT}:80
+    volumes:
+      - ../:/usr/share/nginx/html
