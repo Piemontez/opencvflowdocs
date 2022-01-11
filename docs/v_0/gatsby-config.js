@@ -16,7 +16,12 @@ module.exports = {
       },
     ],
     sidebarConfig: {
-      forcedNavOrder: ['/overview', '/installation', '/components', '/properties'],
+      forcedNavOrder: [
+        "/overview",
+        "/installation",
+        "/components",
+        "/properties",
+      ],
       ignoreIndex: false,
     },
   },
