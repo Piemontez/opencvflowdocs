@@ -21,6 +21,7 @@ module.exports = {
         "/installation",
         "/components",
         "/properties",
+        "/samples",
       ],
       ignoreIndex: false,
     },
