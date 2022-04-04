@@ -5,6 +5,7 @@ services:
     image: nginx:latest
     ports:
       - ${SYSTEM_PORT}:80
+      - ${APP_ONLINE_PORT}:8080
     volumes:
       - ../:/usr/share/nginx/html
       - ../nginx.conf:/etc/nginx/conf.d/default.conf
