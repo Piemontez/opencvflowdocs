@@ -1,0 +1,34 @@
+# Sidebar navigation
+
+- label: 'Overview'
+  link: '/'
+- label: 'Installation & Run'
+  link: '/installation'
+- label: Components
+  items:
+    - label: 'IO Component'
+      link: '/components/io'
+    - label: 'IO Endless Component'
+      link: '/components/ioendless'
+    - label: 'Output Component'
+      link: '/components/output'
+    - label: 'Custom Component'
+      link: '/components/custom'
+    - label: 'Node Properties'
+      link: '/components/nodeproperties'
+- label: Samples
+  items:
+    - label: Background Remove
+      link: /samples/bg_remove
+    - label: Edge Detection
+      link: /samples/edge
+    - label: Morphological Transformations
+      link: /samples/morphology
+- label: Links
+  items:
+    - label: Online OpenCV-Flow IDE
+      link: https://online.opencvflow.org/
+    - label: Git OpenCV-Flow
+      link: https://github.com/Piemontez/opencvflow
+    - label: Git OpenCV-Flow Docs
+      link: https://github.com/Piemontez/opencvflowdocs
