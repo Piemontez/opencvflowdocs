@@ -1,29 +1,29 @@
 # Sidebar navigation
 
 - label: 'Overview'
-  link: '/'
+  link: '/en'
 - label: 'Installation & Run'
-  link: '/installation'
+  link: '/en/installation'
 - label: Components
   items:
     - label: 'IO Component'
-      link: '/components/io'
+      link: '/en/components/io'
     - label: 'IO Endless Component'
-      link: '/components/ioendless'
+      link: '/en/components/ioendless'
     - label: 'Output Component'
-      link: '/components/output'
+      link: '/en/components/output'
     - label: 'Custom Component'
-      link: '/components/custom'
+      link: '/en/components/custom'
     - label: 'Node Properties'
-      link: '/components/nodeproperties'
+      link: '/en/components/nodeproperties'
 - label: Samples
   items:
     - label: Background Remove
-      link: /samples/bg_remove
+      link: /en/samples/bg_remove
     - label: Edge Detection
-      link: /samples/edge
+      link: /en/samples/edge
     - label: Morphological Transformations
-      link: /samples/morphology
+      link: /en/samples/morphology
 - label: Links
   items:
     - label: Online OpenCV-Flow IDE
