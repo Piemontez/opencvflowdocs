@@ -1,0 +1,59 @@
+---
+title: 'Components'
+description: 'How to add components in to the OpenCV-Flow'
+---
+
+All functionality and components of opencv flow are added via plugin.
+
+To create your own components, just create a new plugin and add the components to the plugin.
+
+## Creating Components
+
+The basic composition of a component is composed of a menu and a processor.
+
+The menu contains the name of the component shown in the top bar.
+
+The processor contains the class that processes data from nodes connected to the component.
+
+```typescript
+import { CVFComponent } from 'renderer/types/component';
+
+export class CustomComponent extends CVFIOComponent {
+  //Nav Bar Menu link Definitions
+  static menu = { tabTitle: "Top Tab Bar", title: 'Menu name' };
+
+  // Class responsible for processing data cycles or images frames
+  static processor = class CustomNode extends CVFNodeProcessor {
+    //Function called when starting processing (click run). one time call
+    async start(): Promise<void> {
+      ...
+    }
+    //Function called every new operation cycle/frame
+    async proccess(): Promise<void> {
+      ...
+    }
+    //Function called when stopping processing. one time call
+    async stop(): Promise<void> {
+      ...
+    }
+  }
+}
+```
+
+## Adding Plugin
+
+To add a plugin, just create a Typescript Object that extends the PluginType type and add this object to the plugins file located in "./src/plugin/index.tsx".
+
+```typescript
+import { PluginType } from 'renderer/types/plugin';
+
+const CustomPlugin: PluginType = {
+  name: 'Custom Plugin',
+  components: [
+    ...CustomComponents
+  ],
+};
+
+export default CustomPlugin;
+```
+

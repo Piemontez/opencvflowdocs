@@ -96,7 +96,7 @@ Layout.defaultProps = {
 
 const bg = { backgroundColor: "#ccc" };
 function TopHeader() {
-  const groups = window.location.pathname.match(/\/(.*)\/{0,1}(.*)/);
+  const groups = window.location.pathname.match(/\/([^\/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "pt";
 
   const replaceUrl = (newLang) => {
