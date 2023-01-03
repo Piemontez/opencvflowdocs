@@ -61,15 +61,6 @@
       link: /pt/guides/segmentation
     - label: Nòs de Transformação
       link: /pt/guides/transform
-- label: Samples
-  link: '/pt'
-  items:
-    - label: Background Remove
-      link: /pt/samples/bg_remove
-    - label: Edge Detection
-      link: /pt/samples/edge
-    - label: Morphological Transformations
-      link: /pt/samples/morphology
 - label: Dev Componentes
   link: '/pt'
   items:
