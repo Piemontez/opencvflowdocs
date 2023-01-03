@@ -1,10 +1,12 @@
 # Sidebar navigation
 
+# EN
 - label: 'Overview'
   link: '/en'
 - label: 'Installation & Run'
   link: '/en/installation'
 - label: Components
+  link: '/en'
   items:
     - label: 'IO Component'
       link: '/en/components/io'
@@ -17,6 +19,7 @@
     - label: 'Node Properties'
       link: '/en/components/nodeproperties'
 - label: Samples
+  link: '/en'
   items:
     - label: Background Remove
       link: /en/samples/bg_remove
@@ -24,7 +27,64 @@
       link: /en/samples/edge
     - label: Morphological Transformations
       link: /en/samples/morphology
-- label: Links
+- label: Useful Links
+  link: '/en'
+  items:
+    - label: Online OpenCV-Flow IDE
+      link: https://online.opencvflow.org/
+    - label: Git OpenCV-Flow
+      link: https://github.com/Piemontez/opencvflow
+    - label: Git OpenCV-Flow Docs
+      link: https://github.com/Piemontez/opencvflowdocs
+
+# PT
+- label: 'Visão Geral'
+  link: '/pt'
+- label: 'Instalação e Execução'
+  link: '/pt/installation'
+- label: Guia
+  link: '/pt'
+  items:
+    - label: Nòs de Entradas
+      link: /pt/guides/inputs
+    - label: Nòs Conversores
+      link: /pt/guides/conversors
+    - label: Nòs de Operações Aritiméticas
+      link: /pt/guides/arithmetic
+    - label: Nòs de Alisamento
+      link: /pt/guides/smoothing
+    - label: Nòs de Morfologia
+      link: /pt/guides/morphology
+    - label: Nòs de Deteclção de Borda
+      link: /pt/guides/edge
+    - label: Nòs de Segmentação
+      link: /pt/guides/segmentation
+    - label: Nòs de Transformação
+      link: /pt/guides/transform
+- label: Samples
+  link: '/pt'
+  items:
+    - label: Background Remove
+      link: /pt/samples/bg_remove
+    - label: Edge Detection
+      link: /pt/samples/edge
+    - label: Morphological Transformations
+      link: /pt/samples/morphology
+- label: Dev Componentes
+  link: '/pt'
+  items:
+    - label: 'IO Component'
+      link: '/pt/components/io'
+    - label: 'IO Endless Component'
+      link: '/pt/components/ioendless'
+    - label: 'Output Component'
+      link: '/pt/components/output'
+    - label: 'Custom Component'
+      link: '/pt/components/custom'
+    - label: 'Node Properties'
+      link: '/pt/components/nodeproperties'
+- label: Links Úteis
+  link: '/pt'
   items:
     - label: Online OpenCV-Flow IDE
       link: https://online.opencvflow.org/

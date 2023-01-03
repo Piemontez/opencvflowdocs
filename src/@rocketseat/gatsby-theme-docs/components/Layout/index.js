@@ -4,7 +4,7 @@ import { jsx, css } from "@emotion/react";
 import PropTypes from "prop-types";
 
 import TableOfContents from "@rocketseat/gatsby-theme-docs/src/components/Docs/TOC";
-import Sidebar from "@rocketseat/gatsby-theme-docs/src/components/Sidebar";
+import Sidebar from "../Sidebar";
 import Header from "@rocketseat/gatsby-theme-docs/src/components/Header";
 import Overlay from "@rocketseat/gatsby-theme-docs/src/components/Overlay";
 import {
@@ -96,13 +96,13 @@ Layout.defaultProps = {
 
 const bg = { backgroundColor: "#ccc" };
 function TopHeader() {
-  const groups = window.location.pathname.match(/\/([^\/]*)\/{0,1}(.*)/);
+  const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "pt";
 
   const replaceUrl = (newLang) => {
     window.location.href = window.location.href.replace(
-      `/${currLang}/`,
-      `/${newLang}/`
+      `/${currLang}`,
+      `/${newLang}`
     );
   };
 
