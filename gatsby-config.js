@@ -19,7 +19,7 @@ module.exports = {
         docsPath: `src/docs`,
         yamlFilesPath: `src/yamlFiles`,
         repositoryUrl: `https://github.com/Piemontez/opencvflowdocs`,
-        baseDir: `examples/gatsby-theme-docs`,
+        baseDir: ``,
       },
     },
     {
