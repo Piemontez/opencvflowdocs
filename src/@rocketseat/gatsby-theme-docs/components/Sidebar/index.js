@@ -38,7 +38,9 @@ export default function Sidebar({ isMenuOpen }) {
     }
   `);*/
 
-  const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
+  const isBrowser = () => typeof window !== "undefined";
+  const pathname = isBrowser() ? window.location.pathname : "";
+  const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = "/" + (groups?.length > 1 ? groups[1] : "pt");
 
   const data = useSidebar();
