@@ -17,6 +17,7 @@ import {
   Nav,
   NavLink,
 } from "./styles";
+import Footer from "../Footer";
 
 export default function Layout({
   children,
@@ -88,6 +89,7 @@ export default function Layout({
           </Main>
         </Container>
       )}
+      <Footer />
     </Fragment>
   );
 }
@@ -108,7 +110,12 @@ Layout.defaultProps = {
   headings: null,
 };
 
-const bg = { backgroundColor: "#ccc" };
+const bg = {
+  backgroundColor: "#eee",
+  fontWeight: '600',
+  color: "rgb(0, 156, 130)",
+  border: "1px solid rgb(0, 156, 130)",
+};
 function TopHeader({ currLang }) {
   const replaceUrl = (newLang) => {
     window.location.href = window.location.href.replace(

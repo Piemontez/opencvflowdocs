@@ -1,7 +1,7 @@
 # Sidebar navigation
 
 # EN
-- label: 'Overview'
+- label: 'Home'
   link: '/en'
 - label: 'Installation & Run'
   link: '/en/installation'
@@ -38,7 +38,7 @@
       link: https://github.com/Piemontez/opencvflowdocs
 
 # PT
-- label: 'Visão Geral'
+- label: 'Início'
   link: '/pt'
 - label: 'Instalação e Execução'
   link: '/pt/installation'
