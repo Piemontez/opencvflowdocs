@@ -1,21 +1,23 @@
 import React from "react";
-import { Container } from "../Layout/styles";
 import { FooterStyled } from "./styles";
 
-const h2Style = { color: "#FFF" };
+const h2Style = { color: "#FFF", cursor: 'pointer' };
 const h3Style = { color: "#FFF" };
 
-export default function Footer({}) {
+export default function Footer() {
   return (
     <FooterStyled>
       <div style={{ margin: "0 auto", maxWidth: "1400px" }}>
         <div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
           <div style={{ flex: 1 }}>
-          <a href="https://www.linkedin.com/in/piemontez/" target="_blank">
-            <h2 style={h2Style}>
-                By Piemontez
+            <h2
+              style={h2Style}
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/piemontez/")
+              }
+            >
+              By Piemontez
             </h2>
-            </a>
             <p>OpenCV-Flow possui código livre</p>
           </div>
           <div style={{ flex: 1 }}>

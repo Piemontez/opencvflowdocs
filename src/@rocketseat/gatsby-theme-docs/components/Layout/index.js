@@ -34,12 +34,16 @@ export default function Layout({
     setMenuOpen(!isMenuOpen);
   };
 
-  const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
+  const isBrowser = () => typeof window !== "undefined";
+  const pathname = isBrowser() ? window.location.pathname : "";
+  const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "pt";
-  const isHome = window.location.pathname.endsWith("/" + currLang);
+  const isHome = pathname.endsWith("/" + currLang);
 
   if (!currLang) {
-    window.location.href += "pt";
+    if (isBrowser()) {
+      window.location.href += "pt";
+    }
     return null;
   }
 
@@ -112,7 +116,7 @@ Layout.defaultProps = {
 
 const bg = {
   backgroundColor: "#eee",
-  fontWeight: '600',
+  fontWeight: "600",
   color: "rgb(0, 156, 130)",
   border: "1px solid rgb(0, 156, 130)",
 };
