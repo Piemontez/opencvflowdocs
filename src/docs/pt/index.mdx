@@ -3,11 +3,116 @@ title: 'Overview'
 description: 'OpenCV-Flow Overview'
 ---
 
-OpenCV-Flow is a IDE to make, test and teach computer vision techniques from typescript language. 
-You can implement custom node types and edge types and it comes with components like a mini-map and graph controls.
 
-![![OpenCV-Flow Example](./assets/overview.webp)](http://opencvflow.org/img/docs/v_0/assets/overview.gif)
+<div style="padding: 80px 0; margin: 0 0 70px  0; background-color: #eeeeee">
+    <div style="width: 100%; max-width: 1400px; margin: 0 auto; display: flex; flex-direction: row;">
+        <div style="flex: 1">
+            <div style="
+                -webkit-transform: scale(0.9) perspective(800px)
+                rotateY(+41deg) rotateX(5deg) rotate(2deg);
+                transform: scale(1) perspective(800px) rotateY(+41deg)
+                rotateX(5deg) rotate(2deg);
+            ">
+                <img src="../assets/bg_remove.webp" />
+            </div>
+        </div>
+        <div style="flex: 1">
+            <div class="work-text-full">
+            <div class="work-text">
+                <h1>Computer Vision IDE</h1>
+                <p>
+                    OpenCV-Flow is designed for students, teachers and javascript developers.
+                </p>
+                <h2>How It Works?</h2>
+                <p>
+                    Through flowcharts you can chain different computer vision
+                    techniques and run your application to visualize the effect
+                    of these techniques on a particular video or image.
+                </p>
+                <br />
+                <a href="https://online.opencvflow.org/" style="background-color: #fff; padding:10px 15px; border-radius:8px; border:1px solid rgb(244, 143, 177); color: rgb(236, 106, 150);  margin-right: 10px;">
+                    Versão Online
+                </a>
+                <a href="/pt/installation" style="background-color: #fff; padding:10px 15px; border-radius:8px; border:1px solid rgb(0, 156, 130); color: rgb(0, 156, 130);">
+                    Documentação
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 24px;">
 
-The IDE was built from OpenCV.js, React, React-Flow and MobX libraries. Its style was customized from bootstrap. 
-The operating engine is built on the Electron framework.
+<div style="width: 40%; margin-bottom: 30px">
+
+## Three Simple Steps
+
+Open Computer Vision - Flow is an IDE for computer vision studies and testing.
+In just 3 steps you can visualize the result of different computer vision techniques.
+
+</div>
+
+<div style="display: flex; flex-direction: row; margin-bottom: 80px; text-align: center">
+    <div style="flex: 1">
+        <div style="width: 40%; margin: 0 auto; ">
+            <img src="../assets/pesquisa.webp" />
+        </div>
+        <h2>Research</h2>
+        <p>Identify the techniques that will be used in the project.</p>
+    </div>
+    <div style="flex: 1">
+        <div style="width: 40%; margin: 0 auto; ">
+            <img src="../assets/fluxo.webp" />
+        </div>
+        <h2>Flow</h2>
+        <p>Draw your project flowchart with OpenCV-Flow components</p>
+    </div>
+    <div style="flex: 1">
+        <div style="width: 40%; margin: 0 auto; ">
+            <img src="../assets/visualizar.webp" />
+        </div>
+        <h2>Visualize</h2>
+        <p>Visualize the result of techniques applied in real time</p>
+    </div>
+</div>
+
+<div style="display: flex; flex-direction: row">
+    <div style="flex: 1;">
+        <h2>Custom Components</h2>
+        <p style="padding-right: 100px">
+            OpenCV-Flow lets you add customizable components to the IDE.
+            Nodes are processed using the "process" function. Node input
+            data can be accessed via this.inputs. The outputs are
+            informed in this.sources property. And to display on screen
+            call the output function.
+        </p>
+    </div>
+    
+<div style="flex: 1">
+
+```typescript
+import cv, { Mat } from 'opencv-ts';
+
+export class SobelComponent extends CVFIOComponent {
+  static processor = class SobelProcessor extends CVFNodeProcessor {
+    async proccess() {
+      this.sources = [];
+      for (const src of this.inputs) {
+        const dst = new cv.Mat(src.rows, src.cols, cv.CV_8UC1);
+
+        cv.cvtColor(src, src, cv.COLOR_RGB2GRAY, 0);
+        cv.Sobel(src,dst, cv.CV_8U, 1, 0, 3, 1, 0, cv.BORDER_DEFAULT);
+
+        this.sources.push(dst);
+        this.output(dst);
+      }
+    }
+  };
+}
+```
+
+</div>
+</div>
+
+</div>

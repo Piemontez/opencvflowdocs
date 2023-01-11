@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql, Link } from "gatsby";
+//import { useStaticQuery, graphql } from "gatsby";
 import { useSidebar } from "@rocketseat/gatsby-theme-docs-core";
 
 import {
   Container,
-  LogoContainer,
   List,
   Heading,
   Item,
@@ -14,7 +13,6 @@ import {
 import { isExternalUrl } from "@rocketseat/gatsby-theme-docs/src/util/url";
 import ExternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar/ExternalLink";
 import InternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar/InternalLink";
-import Logo from "@rocketseat/gatsby-theme-docs/src/components/Logo";
 
 function ListWithSubItems({ children, text }) {
   return (
@@ -26,7 +24,7 @@ function ListWithSubItems({ children, text }) {
 }
 
 export default function Sidebar({ isMenuOpen }) {
-  const {
+  /*const {
     site: {
       siteMetadata: { basePath },
     },
@@ -38,7 +36,7 @@ export default function Sidebar({ isMenuOpen }) {
         }
       }
     }
-  `);
+  `);*/
 
   const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = "/" + (groups?.length > 1 ? groups[1] : "pt");

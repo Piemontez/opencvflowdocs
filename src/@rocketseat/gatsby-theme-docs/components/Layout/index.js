@@ -8,6 +8,7 @@ import Sidebar from "../Sidebar";
 import Header from "@rocketseat/gatsby-theme-docs/src/components/Header";
 import Overlay from "@rocketseat/gatsby-theme-docs/src/components/Overlay";
 import {
+  ContainerHome,
   Container,
   Main,
   Children,
@@ -32,48 +33,61 @@ export default function Layout({
     setMenuOpen(!isMenuOpen);
   };
 
+  const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
+  const currLang = groups?.length > 1 ? groups[1] : "pt";
+  const isHome = window.location.pathname.endsWith("/" + currLang);
+
+  if (!currLang) {
+    window.location.href += "pt";
+    return null;
+  }
+
   return (
     <Fragment>
       <Overlay isMenuOpen={isMenuOpen} onClick={handleMenuOpen} />
-      <TopHeader />
-      <Container>
-        <Sidebar isMenuOpen={isMenuOpen} />
-        <Main>
-          <Header handleMenuOpen={handleMenuOpen} />
-          {title && (
-            <h1
-              css={css`
-                display: none;
-
-                @media (max-width: 1200px) {
-                  display: block;
-                }
-              `}
-            >
-              {title}
-            </h1>
-          )}
-          <Children ref={contentRef}>
+      <TopHeader currLang={currLang} />
+      {isHome ? (
+        <ContainerHome>{children}</ContainerHome>
+      ) : (
+        <Container>
+          <Sidebar isMenuOpen={isMenuOpen} />
+          <Main>
+            <Header handleMenuOpen={handleMenuOpen} />
             {title && (
               <h1
                 css={css`
+                  display: none;
+
                   @media (max-width: 1200px) {
-                    display: none;
+                    display: block;
                   }
                 `}
               >
                 {title}
               </h1>
             )}
-            {children}
-          </Children>
-          <TableOfContents
-            headings={headings}
-            disableTOC={disableTOC}
-            contentRef={contentRef}
-          />
-        </Main>
-      </Container>
+            <Children ref={contentRef}>
+              {title && (
+                <h1
+                  css={css`
+                    @media (max-width: 1200px) {
+                      display: none;
+                    }
+                  `}
+                >
+                  {title}
+                </h1>
+              )}
+              {children}
+            </Children>
+            <TableOfContents
+              headings={headings}
+              disableTOC={disableTOC}
+              contentRef={contentRef}
+            />
+          </Main>
+        </Container>
+      )}
     </Fragment>
   );
 }
@@ -95,10 +109,7 @@ Layout.defaultProps = {
 };
 
 const bg = { backgroundColor: "#ccc" };
-function TopHeader() {
-  const groups = window.location.pathname.match(/\/([^/]*)\/{0,1}(.*)/);
-  const currLang = groups?.length > 1 ? groups[1] : "pt";
-
+function TopHeader({ currLang }) {
   const replaceUrl = (newLang) => {
     window.location.href = window.location.href.replace(
       `/${currLang}`,
