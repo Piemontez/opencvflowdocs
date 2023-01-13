@@ -40,26 +40,28 @@
 # PT
 - label: 'Início'
   link: '/pt'
+- label: 'Visão geral'
+  link: '/pt/overview'
 - label: 'Instalação e Execução'
   link: '/pt/installation'
 - label: Guia
   link: '/pt'
   items:
-    - label: Nòs de Entradas
+    - label: Nós de Entradas
       link: /pt/guides/inputs
-    - label: Nòs Conversores
+    - label: Nós Conversores
       link: /pt/guides/conversors
-    - label: Nòs de Operações Aritiméticas
+    - label: Nós de Operações Aritiméticas
       link: /pt/guides/arithmetic
-    - label: Nòs de Alisamento
+    - label: Nós de Alisamento
       link: /pt/guides/smoothing
-    - label: Nòs de Morfologia
+    - label: Nós de Morfologia
       link: /pt/guides/morphology
-    - label: Nòs de Deteclção de Borda
+    - label: Nós de Deteclção de Borda
       link: /pt/guides/edge
-    - label: Nòs de Segmentação
+    - label: Nós de Segmentação
       link: /pt/guides/segmentation
-    - label: Nòs de Transformação
+    - label: Nós de Transformação
       link: /pt/guides/transform
 - label: Dev Componentes
   link: '/pt'
