@@ -38,8 +38,11 @@ export default function Layout({
   const pathname = isBrowser() ? window.location.pathname : "";
   const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "pt";
-  const isHome = pathname.endsWith("/" + currLang);
+  const isHome = pathname.endsWith("/" + currLang) || pathname.endsWith("/" + currLang + "/");
 
+  console.log(pathname);
+  console.log(currLang);
+  console.log(isHome);
   if (!currLang) {
     if (isBrowser()) {
       window.location.href += "pt";
