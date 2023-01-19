@@ -12,7 +12,7 @@ export class DilateComponent extends CVFIOComponent {
   static processor = class DilateNode extends CVFNodeProcessor {
     //Node property type configurations
     //Properties defined here are displayed in the properties panel for editing
-    static properties = [
+    properties = [
       { name: 'kernel', type: PropertyType.OneZeroMatrix },
       { name: 'anchor', type: PropertyType.Point },
       { name: 'iterations', type: PropertyType.Integer },

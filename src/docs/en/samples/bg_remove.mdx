@@ -18,7 +18,7 @@ Fallow the source code:
 export class BackgroundSubtractorMOG2Component extends CVFIOComponent {
   static menu = { tabTitle: tabName, title: "BGSubtractorMog2" };
   static processor = class MedianBlurNode extends CVFNodeProcessor {
-    static properties = [
+    properties = [
       { name: "history", type: PropertyType.Integer },
       { name: "varThreshold", type: PropertyType.Decimal },
       { name: "detectShadows", type: PropertyType.Boolean },

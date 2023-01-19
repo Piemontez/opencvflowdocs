@@ -18,7 +18,7 @@ Fallow the source code:
 export class DilateComponent extends CVFIOComponent {
   static menu = { tabTitle: tabName, title: "Dilate" };
   static processor = class DilateNode extends CVFNodeProcessor {
-    static properties = [
+    properties = [
       { name: "kernel", type: PropertyType.OneZeroMatrix },
       { name: "anchor", type: PropertyType.Point },
       { name: "iterations", type: PropertyType.Integer },
@@ -67,7 +67,7 @@ export class DilateComponent extends CVFIOComponent {
 export class ErodeComponent extends CVFIOComponent {
   static menu = { tabTitle: tabName, title: "Erode" };
   static processor = class ErodeNode extends CVFNodeProcessor {
-    static properties = [
+    properties = [
       { name: "kernel", type: PropertyType.OneZeroMatrix },
       { name: "anchor", type: PropertyType.Point },
       { name: "iterations", type: PropertyType.Integer },
