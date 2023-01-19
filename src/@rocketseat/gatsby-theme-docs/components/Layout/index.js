@@ -38,11 +38,10 @@ export default function Layout({
   const pathname = isBrowser() ? window.location.pathname : "";
   const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "pt";
-  const isHome = pathname.endsWith("/" + currLang) || pathname.endsWith("/" + currLang + "/");
+  const isHome =
+    pathname.endsWith("/" + currLang) ||
+    pathname.endsWith("/" + currLang + "/");
 
-  console.log(pathname);
-  console.log(currLang);
-  console.log(isHome);
   if (!currLang) {
     if (isBrowser()) {
       window.location.href += "pt";
@@ -50,52 +49,57 @@ export default function Layout({
     return null;
   }
 
-  return (
-    <Fragment>
-      <Overlay isMenuOpen={isMenuOpen} onClick={handleMenuOpen} />
-      <TopHeader currLang={currLang} />
-      {isHome ? (
-        <ContainerHome>{children}</ContainerHome>
-      ) : (
-        <Container>
-          <Sidebar isMenuOpen={isMenuOpen} />
-          <Main>
-            <Header handleMenuOpen={handleMenuOpen} />
+  let content;
+  if (isHome) {
+    content = <ContainerHome>{children}</ContainerHome>;
+  } else {
+    content = (
+      <Container>
+        <Sidebar isMenuOpen={isMenuOpen} />
+        <Main>
+          <Header handleMenuOpen={handleMenuOpen} />
+          {title && (
+            <h1
+              css={css`
+                display: none;
+
+                @media (max-width: 1200px) {
+                  display: block;
+                }
+              `}
+            >
+              {title}
+            </h1>
+          )}
+          <Children ref={contentRef}>
             {title && (
               <h1
                 css={css`
-                  display: none;
-
                   @media (max-width: 1200px) {
-                    display: block;
+                    display: none;
                   }
                 `}
               >
                 {title}
               </h1>
             )}
-            <Children ref={contentRef}>
-              {title && (
-                <h1
-                  css={css`
-                    @media (max-width: 1200px) {
-                      display: none;
-                    }
-                  `}
-                >
-                  {title}
-                </h1>
-              )}
-              {children}
-            </Children>
-            <TableOfContents
-              headings={headings}
-              disableTOC={disableTOC}
-              contentRef={contentRef}
-            />
-          </Main>
-        </Container>
-      )}
+            {children}
+          </Children>
+          <TableOfContents
+            headings={headings}
+            disableTOC={disableTOC}
+            contentRef={contentRef}
+          />
+        </Main>
+      </Container>
+    );
+  }
+
+  return (
+    <Fragment>
+      <Overlay isMenuOpen={isMenuOpen} onClick={handleMenuOpen} />
+      <TopHeader currLang={currLang} />
+      {content}
       <Footer />
     </Fragment>
   );
