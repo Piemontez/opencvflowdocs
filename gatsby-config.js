@@ -30,13 +30,13 @@ module.exports = {
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
-          head: true,
+          head: false,
           // Setting this parameter is also optional
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
           //exclude: ["/preview/**", "/do-not-track/me/too/"],
           // Defaults to https://www.googletagmanager.com
-          origin: "https://opencvflow.org/",
+          origin: "https://www.googletagmanager.com",
           // Delays processing pageview events on route update (in milliseconds)
           delayOnRouteUpdate: 0,
         },
