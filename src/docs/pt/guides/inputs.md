@@ -10,7 +10,7 @@ Nós de entradas são componentes que carregam vídeos e imagens ou geram núcle
 
 ## Video Capture
 
-O componente "Video Capture" é responsável por capturar o stream de vídeo da câmera conectada ao computador.
+Componente responsável por capturar o stream de vídeo da câmera conectada ao computador.
 
 ![Video Capture](../../assets/inputs/videocapture.png)
 
