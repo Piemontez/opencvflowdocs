@@ -33,4 +33,4 @@ jobs:
         run: ./bin/local-build-docs.sh 
 
       - name: Atualiza PWA
-        run: rsync -e "ssh -i keypair.pem" -av public/* ${{ secrets.INSTANCE_USER }}@${{ secrets.INSTANCE_IP }}:/var/www/solicitacoesserver/pwa/build/
+        run: rsync -e "ssh -i keypair.pem" -av public/* ${{ secrets.INSTANCE_USER }}@${{ secrets.INSTANCE_IP }}:/var/www/docker/opencvflowdocs/home/
