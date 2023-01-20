@@ -37,13 +37,19 @@ export default function Sidebar({ isMenuOpen }) {
       }
     }
   `);*/
+  const data = useSidebar();
 
   const isBrowser = () => typeof window !== "undefined";
   const pathname = isBrowser() ? window.location.pathname : "";
   const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = "/" + (groups?.length > 1 ? groups[1] : "pt");
+  const isHome =
+    pathname.endsWith("/" + currLang) ||
+    pathname.endsWith("/" + currLang + "/");
 
-  const data = useSidebar();
+  if (isHome) {
+    return null;
+  }
 
   function renderLink(link, label) {
     return isExternalUrl(link) ? (
