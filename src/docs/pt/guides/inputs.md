@@ -10,6 +10,8 @@ Nós de entradas são componentes que carregam vídeos e imagens ou geram núcle
 
 ## Video Capture
 
+Função OpenCV: **cv.VideoCapture**
+
 Componente responsável por capturar o stream de vídeo da câmera conectada ao computador.
 
 ![Video Capture](../../assets/inputs/videocapture.png)
@@ -53,6 +55,8 @@ Os tipos de saídas deste componente são:
 
 
 ## Structured Element
+
+Função OpenCV: **cv.getStructuringElement**
 
 O Componente "Structured Element" cria uma imagem estruturada.
 É possível criar uma estrutura do tipo retângulo, círculo ou cruz.

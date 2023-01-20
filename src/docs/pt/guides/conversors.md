@@ -20,6 +20,25 @@ a também componentes que processam dados em variações de ponto flutuantes ent
 
 ## Cvt Color
 
-Componente responsável por converter o tipo de dado Mat
+Função OpenCV: **cv.cvtColor**
+
+Componente responsável por converter o espaço de cores de uma matriz Mat do Opencv.js. 
 
 ![Video Capture](../../assets/conversors/cvtconversors.png)
+
+| Saída     | Descrição |
+|-----------|-----------|
+| Out       | Imagem / **Opencv Mat**   |
+
+
+## Conver To
+
+Função OpenCV: **Mat.convertTo**
+
+Componente que converte uma matriz em outro tipo de dados com a possibilidade de informar a escala de conversão.
+
+Por exemplo: com este componente você pode converter uma matriz de inteiros, para uma matriz de ponto flutuantes com escala de 0 a 1.
+
+| Saída     | Descrição |
+|-----------|-----------|
+| Out       | Imagem / **Opencv Mat**   |
