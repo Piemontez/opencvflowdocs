@@ -5,3 +5,13 @@ export const FooterStyled = styled.div`
   color: #fafafa;
   padding: 40px;
 `;
+
+export const FooterGridStyled = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
+`;

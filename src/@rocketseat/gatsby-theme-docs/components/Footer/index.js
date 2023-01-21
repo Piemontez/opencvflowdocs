@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterStyled } from "./styles";
+import { FooterStyled, FooterGridStyled } from "./styles";
 
 const h2Style = { color: "#FFF", cursor: 'pointer' };
 const h3Style = { color: "#FFF" };
@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <FooterStyled>
       <div style={{ margin: "0 auto", maxWidth: "1400px" }}>
-        <div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
+        <FooterGridStyled>
           <div style={{ flex: 1 }}>
             <h2
               style={h2Style}
@@ -20,7 +20,7 @@ export default function Footer() {
             </h2>
             <p>OpenCV-Flow possui código livre</p>
           </div>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 2 }}>
             <div style={{ display: "flex", flexDirection: "row" }}>
               <div style={{ flex: 1 }}>
                 <h3 style={h3Style}>Documentação</h3>
@@ -48,7 +48,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </FooterGridStyled>
       </div>
     </FooterStyled>
   );
