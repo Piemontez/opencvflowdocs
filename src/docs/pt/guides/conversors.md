@@ -11,7 +11,7 @@ determinados componentes procassam apenas tipos de dados inteiros e outros apena
 a também componentes que processam dados em variações de ponto flutuantes entre 0 e 1.
 
 >
-> É recomendado que os usuários da IDE tenham nossões básicas do funcionamento da biblioteca OpenCV, 
+> É recomendado que os usuários da IDE tenham noções básicas do funcionamento da biblioteca OpenCV, 
 > ou ao menos saibam como funcionam a estrutura da Matriz Mat desta biblioteca.
 > Leia mais em: 
 > [Mat - The Basic Image Container](https://docs.opencv.org/4.x/d6/d6d/tutorial_mat_the_basic_image_container.html)
