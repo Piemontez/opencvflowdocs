@@ -18,28 +18,41 @@ ficando assim com a cor branca.
 
 Função OpenCV: **cv.add**
 
-O componente calcula a soma de cada pixel entre duas matrizes.
+Este componente calcula a soma de cada pixel entre duas matrizes.
 
 ## Subtract
 
 Função OpenCV: **cv.subtract**
 
-O componente calcula a subtração de cada pixel entre duas matrizes.
+Este componente calcula a subtração de cada pixel entre duas matrizes.
 
 ## Multiply
 
 Função OpenCV: **cv.multiply**
 
-O componente calcula a multiplicação entre duas matrizes.
+Este componente calcula a multiplicação entre duas matrizes.
 
 ## Divide
 
 Função OpenCV: **cv.divide**
 
-O componente calcula a divisão de cada pixel entre duas matrizes.
+Este componente calcula a divisão de cada pixel entre duas matrizes.
 
 ## Mul
 
 Função OpenCV: **cv.mul**
 
-O componente calcula a multiplicação elemento a elemento entre duas matrizes.
+Este componente calcula a multiplicação elemento a elemento entre duas matrizes.
+
+## Normalize
+
+Função OpenCV: **cv.normalize**
+
+Ente componente normaliza a norma ou intervalo de valores de uma matriz. 
+Existem diversos [tipos de normalização](https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga87eef7ee3970f86906d69a92cbf064bd) matemáticas disponíveis no opencv.
+
+## Convert Scale Abs
+
+Função OpenCV: **cv.convertScaleAbs**
+
+Este componente dimensiona, calcula valores absolutos e converte o resultado em 8 bits.
