@@ -43,7 +43,8 @@ Os tipos de saídas deste componente são:
 
 ## Kernel
 
-O Componente "Kernel" cria uma imagem de saída, conforme as propriedades do componente informadas.
+O Componente "Kernel" cria um matriz Mat de saída, conforme o arranjo informado.
+Os valores da matriz são 0 ou 1. 
 
 ![Kernel Capture](../../assets/inputs/kernelcapture.png)
 
@@ -52,6 +53,19 @@ Os tipos de saídas deste componente são:
 | Saída     | Descrição |
 |-----------|-----------|
 | Out       | Imagem / **Opencv Mat**   |
+
+
+## Mat
+
+O Componente "Mat" cria uma Matriz Mat de saída, conforme o arranjo informado.
+Os valores da matriz podem ser informadas via propriedades do componente.
+
+Os tipos de saídas deste componente são:
+
+| Saída     | Descrição |
+|-----------|-----------|
+| Out       | Imagem / **Opencv Mat**   |
+
 
 
 ## Structured Element
