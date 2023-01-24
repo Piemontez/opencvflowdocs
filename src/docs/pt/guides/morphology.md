@@ -16,7 +16,7 @@ e cria uma imagem de saida onde cada pixel nesta imagem indica que a estrutura f
 A dilatação por sua vez, para cada pixel da imagem de entrada que possuir uma informação,
 replica a estrutura na imagem de saída.
 
-[Erode & Dilate](../../assets/morphology/erode_dilate.png)
+![Erode & Dilate](../../assets/morphology/erode_dilate.png)
 
 Os tipos de saídas destes componentes são:
 
@@ -35,7 +35,7 @@ O fechamento realiza a operação dilatação seguida da erosão.
 Esta sequência de operações resulta no fechamento de estruturas na imagem.
 
 
-[Fingerprint](../../assets/morphology/fingerprint.png)
+![Fingerprint](../../assets/morphology/fingerprint.png)
 
 Os tipos de saídas destes componentes são:
 
