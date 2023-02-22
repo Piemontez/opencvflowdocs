@@ -24,7 +24,7 @@ Os tipos de saídas destes componentes são:
 |-----------|-----------|
 | Out       | Imagem / **Opencv Mat**   |
 
-# Opening Closing 
+## Opening & Closing 
 
 A abertura e fechamente são operações que apenas enfileram as operações de erosão e dilatação.
 
