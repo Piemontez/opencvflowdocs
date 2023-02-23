@@ -3,9 +3,30 @@
 # EN
 - label: 'Home'
   link: '/en'
+- label: 'Overview'
+  link: '/en/overview'
 - label: 'Installation & Run'
   link: '/en/installation'
-- label: Components
+- label: Guia
+  link: '/en'
+  items:
+    - label: Nós de Entradas
+      link: /en/guides/inputs
+    - label: Nós Conversores
+      link: /en/guides/conversors
+    - label: Nós de Operações Aritiméticas
+      link: /en/guides/arithmetic
+    - label: Nós de Alisamento
+      link: /en/guides/smoothing
+    - label: Nós de Morfologia
+      link: /en/guides/morphology
+    - label: Nós de Deteclção de Borda
+      link: /en/guides/edge
+    - label: Nós de Segmentação
+      link: /en/guides/segmentation
+    - label: Nós de Transformação
+      link: /en/guides/transform
+- label: Dev Components
   link: '/en'
   items:
     - label: 'IO Component'
