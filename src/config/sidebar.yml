@@ -76,6 +76,15 @@
       link: '/pt/components/custom'
     - label: 'Node Properties'
       link: '/pt/components/nodeproperties'
+- label: Exemplos
+  link: '/pt'
+  items:
+    - label: Remoção de Fundo
+      link: /pt/samples/bg_remove
+    - label: Detecção de Bordas
+      link: /pt/samples/edge
+    - label: Transformação morfológica
+      link: /pt/samples/morphology
 - label: Links Úteis
   link: '/pt'
   items:
