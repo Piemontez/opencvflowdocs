@@ -3,9 +3,17 @@ title: 'Overview'
 description: 'OpenCV-Flow Installation'
 ---
 
+OpenCV-Flow is an IDE for visualizing, testing and teaching computer vision techniques from the typescript/javascript language.
 
-OpenCV-Flow is a IDE to make, test and teach computer vision techniques from typescript language. You can implement custom node types and edge types and it comes with components like a mini-map and graph controls.
+Through the creation of processing flows it is possible to chain image processing and computer vision operations.
 
-![OpenCV-Flow Example](../assets/overview.webp)
+![OpenCV-Flow Example](../assets/overview.png)
 
-The IDE was built from OpenCV.js, React, React-Flow and MobX libraries. Its style was customized from bootstrap. The operating engine is built on the Electron framework.
+You can also create custom, programmable components and add them to the IDE's processing streams.
+
+> The opencv.js library is the processing base of this IDE.
+> Generally speaking, components and nodes are just visual instruments that perform functions in this library.
+
+> Basic knowledge of the opencv.js library is highly recommended.
+
+The IDE was built from OpenCV.js, React, React-Flow and MobX libraries. Its style was customized from bootstrap. The operating mechanism is built into the structure of the electron.

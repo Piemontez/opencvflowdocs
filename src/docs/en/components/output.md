@@ -5,7 +5,7 @@ description: "Output Component for OpenCV-Flow"
 
 Output Component lets you create a node with only one output.
 
-Below is the component created to make a Gaussian Kernel from the opencv library represented in the image above.
+Below is the component created to make a Gaussian Kernel from the opencv.js library.
 
 ```typescript
 export class GaussianKernel2DComponent extends CVFOutputComponent {

@@ -25,6 +25,7 @@ A ferramente local demonstrou ter desempenho maior que a online.
 Dependendo da necessidade dos testes é recomendado utilizar a versão desktop.
 
 ## Requisito de Construção
+
 O OpencvFlow requer node instalado no computador.
 
 Talvez algumas dependências internas também precisem do [node-gyp](https://www.npmjs.com/package/node-gyp) instalado no seu computador.
@@ -41,4 +42,4 @@ npm run start
 
 ## Source
 
-O código-fonte do projeto está disponível em [github](https://github.com/piemontez/opencvflow).
+The source code of the project is available at [github](https://github.com/piemontez/opencvflow).

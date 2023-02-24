@@ -5,7 +5,7 @@ description: "OpenCV-Flow - Erode and Dilate Samples"
 
 ![OpenCV-Flow Example](../../assets/samples/edge.jpeg)
 
-The sample above uses the OpenCV 4 Edge Operators (
+The example in the illustration above uses the OpenCV 4 Edge Operators (
 [Sobel](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#gacea54f142e81b6758cb6f375ce782c8d)
 [Laplace](https://docs.opencv.org/4.x/d4/d86/group__imgproc__filter.html#gad78703e4c8fe703d479c1860d76429e6)
 [Canny](https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html)
@@ -13,7 +13,7 @@ The sample above uses the OpenCV 4 Edge Operators (
 [Find Contours](https://docs.opencv.org/4.x/d5/daa/tutorial_js_contours_begin.html)
 )
 
-These operators are available in the Edge menu
+These operators are available in the Edge menu.
 
 Fallow the source code:
 

@@ -3,10 +3,10 @@ title: 'IO Endless Component'
 description: 'IO Endless Component for OpenCV-Flow'
 ---
 
-IO Endless Component is similar to IO Component, with the only difference, the amount of inputs is unlimited. 
-As new inputs are connected, new inputs and outputs are created.
+CVFIOEndlessComponent é semelhante ao IO Component, com a única diferença, a quantidade de entradas é ilimitada.
+À medida que novas entradas são conectadas, novas entradas e saídas são criadas.
 
-Below is the component created to process the Canny edge detector from the opencv library represented in the image above.
+Abaixo está o componente criado para processar o detector de arestas Canny da biblioteca opencv.js.
 
 ```typescript
 export class CannyComponent extends CVFIOEndlessComponent {

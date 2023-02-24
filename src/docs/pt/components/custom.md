@@ -3,9 +3,9 @@ title: "Custom Component"
 description: "Custom Component for OpenCV-Flow"
 ---
 
-OpenCV-Flow allows you to create components with custom input and sources.
+O OpenCV-Flow permite criar componentes com entradas e fontes personalizadas.
 
-Below is the component created to process the Add operator from the opencv library represented in the image above.
+Abaixo está o componente criado para processar o operador Add da biblioteca opencv.js.
 
 ```typescript
 export class PlusComponent extends CVFComponent {
@@ -36,8 +36,8 @@ export class PlusComponent extends CVFComponent {
 
 ### Handle Directions
 
-informing the "position" property as an attribute of the targets or sources, 
-it is possible to indicate the position of the inputs and outputs in the components
+As propriedades "targets" e "sources" indicam as entradas exigidas pelo componente e quais saídas serão disponibilizadas.
+É possível indicar a posição dos "targets" e "sources" do componente por meio da propriedade "position".
 
 Possible positions:
 ```typescript

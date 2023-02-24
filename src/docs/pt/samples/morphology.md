@@ -5,7 +5,7 @@ description: "OpenCV-Flow - Erode and Dilate Samples"
 
 ![OpenCV-Flow Example](../../assets/samples/morphology.png)
 
-The sample above uses the OpenCV 4 [Morphological Transformations](https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html) techniques.
+The example in the illustration above uses the OpenCV 4 [Morphological Transformations](https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html) techniques.
 
 To add it to the flow click on morphology -> Erode or Dilate.
 

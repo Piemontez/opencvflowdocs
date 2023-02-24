@@ -5,11 +5,11 @@ description: "OpenCV-Flow - Background Remove Sample"
 
 ![OpenCV-Flow Example](../../assets/samples/bg_remove.webp)
 
-O exemplo da ilustração acima usa a técnica OpenCV 4 [BackgroundSubtractorMOG2](https://docs.opencv.org/4.5.5/d7/d7b/classcv_1_1BackgroundSubtractorMOG2.html).
+The example in the illustration above uses the OpenCV 4 [BackgroundSubtractorMOG2](https://docs.opencv.org/4.5.5/d7/d7b/classcv_1_1BackgroundSubtractorMOG2.html) technique.
 
-Para adicioná-lo ao fluxo, clique em imgproc -> BackgroundSubtractorMOG2.
+To add it to the flow click on imgproc -> BackgroundSubtractorMOG2.
 
-Segue o código fonte:
+Fallow the source code:
 
 ```typescript
 /**

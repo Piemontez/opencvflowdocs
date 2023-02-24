@@ -10,21 +10,21 @@
 - label: Guia
   link: '/en'
   items:
-    - label: Nós de Entradas
+    - label: Input Nodes
       link: /en/guides/inputs
-    - label: Nós Conversores
+    - label: Converter Nodes
       link: /en/guides/conversors
-    - label: Nós de Operações Aritiméticas
+    - label: Arithmetic Operations Nodes
       link: /en/guides/arithmetic
-    - label: Nós de Alisamento
+    - label: Smoothing Nodes
       link: /en/guides/smoothing
-    - label: Nós de Morfologia
+    - label: Morphology Nodes
       link: /en/guides/morphology
-    - label: Nós de Deteclção de Borda
+    - label: Edge Detection Nodes
       link: /en/guides/edge
-    - label: Nós de Segmentação
+    - label: Segmentation Nodes
       link: /en/guides/segmentation
-    - label: Nós de Transformação
+    - label: Transformation Nodes
       link: /en/guides/transform
 - label: Dev Components
   link: '/en'
@@ -78,7 +78,7 @@
       link: /pt/guides/smoothing
     - label: Nós de Morfologia
       link: /pt/guides/morphology
-    - label: Nós de Deteclção de Borda
+    - label: Nós de Detecção de Bordas
       link: /pt/guides/edge
     - label: Nós de Segmentação
       link: /pt/guides/segmentation

@@ -3,11 +3,11 @@ title: 'IO Component'
 description: 'IO Component for OpenCV-Flow'
 ---
 
-IO Component are components with only one data input and one data output.
+CVFIOComponent are components with only one data input and one data output.
 
-Most OpenCV-Flow components were created with this component. It is ideal for adding a standalone processor node.
+Most OpenCV-Flow components were created with this component. It is component ideal for adding a standalone processor node.
 
-Below is the component created to process the Sobel edge detector from the opencv library represented in the image above.
+Below is the component created to process the Sobel edge detector from the opencv.js library.
 
 
 ```typescript

@@ -3,11 +3,11 @@ title: 'IO Component'
 description: 'IO Component for OpenCV-Flow'
 ---
 
-IO Component are components with only one data input and one data output.
+CVFIOComponent são componentes com apenas uma entrada de dados e uma saída de dados.
 
-Most OpenCV-Flow components were created with this component. It is ideal for adding a standalone processor node.
+A maioria dos componentes OpenCV-Flow foram criados com este componente. Este componente é ideal para adicionar um nó de processador independente.
 
-Below is the component created to process the Sobel edge detector from the opencv library represented in the image above.
+Abaixo está o componente criado para processar o detector de bordas Sobel da biblioteca opencv.js.
 
 
 ```typescript
