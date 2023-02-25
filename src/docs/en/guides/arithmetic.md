@@ -1,58 +1,57 @@
 ---
-title: 'Nós de Operações Aritiméticas'
-description: 'OpenCV-Flow Nós de Operações Aritiméticas'
+title: 'Arithmetic Operations Nodes'
+description: 'OpenCV-Flow Arithmetic Operations Nodes'
 ---
 
-Nós de operações aritiméticas, realizam operações matemáticas básicas como adição, subtração, multiplicação, divisão.
+Arithmetic operations nodes, perform basic math operations like addition, subtraction, multiplication, division.
 
-> A saída principal dos nós de entrada é uma matriz do tipo Mat do opencv.js.
+> The main output of the input nodes is an opencv.js type Mat matrix.
 
-A seguir um exemplo de operações básicas de operações matemáticas. 
-Observe os componentes de adição, note que o primeiro ficou saturado pois a soma de cada pixel ultrapassou o máximo de cor permitido,
-ficando assim com a cor branca.
+The following is an example of basic math operations.
+Observe the addition components, note that the first one became saturated because the sum of each pixel exceeded the maximum color allowed,
+thus becoming white.
 
 ![Arithmétic Operation Sample](../../assets/arithmetic/samples_01.png)
 
-
 ## Add
 
-Função OpenCV: **cv.add**
+OpenCV function: **cv.add**
 
-Este componente calcula a soma de cada pixel entre duas matrizes.
+This component calculates the sum of each pixel between two matrices.
 
 ## Subtract
 
-Função OpenCV: **cv.subtract**
+OpenCV function: **cv.subtract**
 
-Este componente calcula a subtração de cada pixel entre duas matrizes.
+This component calculates the subtraction of each pixel between two matrices.
 
 ## Multiply
 
-Função OpenCV: **cv.multiply**
+OpenCV function: **cv.multiply**
 
-Este componente calcula a multiplicação entre duas matrizes.
+This component calculates the multiplication between two matrices.
 
 ## Divide
 
-Função OpenCV: **cv.divide**
+OpenCV function: **cv.divide**
 
-Este componente calcula a divisão de cada pixel entre duas matrizes.
+This component calculates the division of each pixel between two matrices.
 
 ## Mul
 
-Função OpenCV: **cv.mul**
+OpenCV function: **cv.mul**
 
-Este componente calcula a multiplicação elemento a elemento entre duas matrizes.
+This component calculates the element-by-element multiplication between two matrices.
 
 ## Normalize
 
-Função OpenCV: **cv.normalize**
+OpenCV function: **cv.normalize**
 
-Ente componente normaliza a norma ou intervalo de valores de uma matriz. 
-Existem diversos [tipos de normalização](https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga87eef7ee3970f86906d69a92cbf064bd) matemáticas disponíveis no opencv.
+This component normalizes the norm or range of values of an array.
+There are several [types of normalization](https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga87eef7ee3970f86906d69a92cbf064bd) mathematics available in opencv.
 
 ## Convert Scale Abs
 
-Função OpenCV: **cv.convertScaleAbs**
+OpenCV function: **cv.convertScaleAbs**
 
-Este componente dimensiona, calcula valores absolutos e converte o resultado em 8 bits.
+This component scales, calculates absolute values and converts the result to 8 bits.

@@ -1,15 +1,14 @@
 ---
-title: 'Nós de Segmentação'
-description: 'OpenCV-Flow Nós de Segmentação'
+title: 'Segmentation Nodes'
+description: 'OpenCV-Flow Segmentation Nodes'
 ---
 
-A segmentação de imagem é uma tarefa de processamento de imagem na qual a imagem é segmentada ou particionada em várias regiões, de modo que os pixels na mesma região compartilhem características comuns.
-
+Image segmentation is an image processing task in which the image is segmented or partitioned into multiple regions such that pixels in the same region share common characteristics.
 
 ## Threshold
 
-Uma das técnicas de segmentação mais comumente usadas é a limiarização. É amplamente utilizado em visão computacional e é muito útil para separar o objeto que nos interessa do fundo.
+One of the most commonly used segmentation techniques is thresholding. It is widely used in computer vision and is very useful for separating the object we are interested in from the background.
 
-Thresholding é o processo de binarização de uma imagem. Este é o tipo mais básico de limiarização, ele consiste em separar a matriz/imagem em tons de cinza em uma imagem em binária (pretro e branco).
+Thresholding is the process of binarizing an image. This is the most basic type of thresholding, it consists of separating the grayscale matrix/image into a binary (black and white) image.
 
-![Limiarização](../../assets/segmetation/threshold.png)
+![Threshold](../../assets/segmetation/threshold.png)

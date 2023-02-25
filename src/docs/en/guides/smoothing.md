@@ -1,57 +1,60 @@
 ---
-title: 'Nós de Alisamento'
-description: 'OpenCV-Flow Nós de Alisamento'
+title: 'Smoothing Knots'
+description: 'OpenCV-Flow Smoothing Nodes'
 ---
 
-Nós de alisamento, realizam operações de desfoque da imagem, normalmente são utilizados para a remoção de ruídos da imagem. 
+Smoothing nodes, perform operations to blur the image, are usually used to remove noise from the image.
 
-> A saída principal dos nós de entrada é uma matriz do tipo Mat do opencv.js.
-> As saídas podem ter diferentes quantidades de canais de cores.
+> The main output of the input nodes is an opencv.js type Mat matrix.
+> Outputs can have different color channel angles.
 
 ## Blur
 
-Função OpenCV: **cv.blur**
+OpenCV function: **cv.blur**
 
-O desfoque da imagem é obtido pela convolução da imagem com um kernel de filtro passa-baixo. 
-É útil para remover o ruído. Na verdade, ele remove o conteúdo de alta frequência (por exemplo: ruído, bordas) da imagem. 
-Portanto, as bordas ficam um pouco desfocadas nesta operação
+Image blurring is achieved by convolving the image with a low-pass filter kernel. It is useful for removing noise. 
+It actually removes high frequency content (eg: noise, edges) from the image. 
+So edges are blurred a little bit in this operation (there are also blurring techniques which don't blur the edges). OpenCV provides four main types of blurring techniques
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).
 
 ## Gaussian
 
-Função OpenCV: **cv.GaussianBlur**
+OpenCV function: **cv.GaussianBlur**
 
-Neste método, em vez de um filtro de caixa, um kernel gaussiano é usado. Isso é feito com a função cv.GaussianBlur(). 
-Devemos especificar a largura e altura do kernel que deve ser positivo e ímpar. 
-Também devemos especificar o desvio padrão nas direções X e Y, sigmaX e sigmaY respectivamente. 
-Se apenas sigmaX for especificado, sigmaY será considerado o mesmo que sigmaX. 
-Se ambos forem dados como zeros, eles serão calculados a partir do tamanho do kernel. 
-O desfoque gaussiano é altamente eficaz na remoção do ruído gaussiano de uma imagem
+In this method, instead of a box filter, a Gaussian kernel is used. 
+It is done with the function, cv.GaussianBlur(). 
+We should specify the width and height of the kernel which should be positive and odd. We also should specify the standard deviation in the X and Y directions, sigmaX and sigmaY respectively. 
+If only sigmaX is specified, sigmaY is taken as the same as sigmaX. 
+If both are given as zeros, they are calculated from the kernel size. Gaussian blurring is highly effective in removing Gaussian noise from an image
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).
 
 ## Media 
 
-Função OpenCV: **cv.medianBlur**
+OpenCV function: **cv.medianBlur**
 
-Aqui, a função cv.medianBlur() pega a mediana de todos os pixels sob a área do kernel e o elemento central é substituído por esse valor mediano. Isso é altamente eficaz contra o ruído de sal e pimenta em uma imagem
+Here, the function cv.medianBlur() takes the median of all the pixels under the kernel area and the central element is replaced with this median value. 
+This is highly effective against salt-and-pepper noise in an image
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).
 
 ## Bilateral Filtering
 
-Função OpenCV: **cv.bilateralFilter**
+OpenCV function: **cv.bilateralFilter**
 
-cv.bilateralFilter() é altamente eficaz na remoção de ruído, mantendo arestas vivas. Mas a operação é mais lenta em comparação com outros filtros. Já vimos que um filtro gaussiano pega a vizinhança ao redor do pixel e encontra sua média ponderada gaussiana. Este filtro gaussiano é uma função apenas do espaço, ou seja, os pixels próximos são considerados durante a filtragem. Não considera se os pixels têm quase a mesma intensidade. Ele não considera se um pixel é um pixel de borda ou não. Assim, também desfoca as bordas, o que não queremos fazer
+cv.bilateralFilter() is highly effective in noise removal while keeping edges sharp. 
+But the operation is slower compared to other filters. We already saw that a Gaussian filter takes the neighbourhood around the pixel and finds its Gaussian weighted average.
+This Gaussian filter is a function of space alone, that is, nearby pixels are considered while filtering. 
+It doesn't consider whether pixels have almost the same intensity. It doesn't consider whether a pixel is an edge pixel or not. So it blurs the edges also, which we don't want to do
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).
 
-
-A filtragem bilateral também leva um filtro gaussiano no espaço, mas mais um filtro gaussiano que é uma função da diferença de pixels. 
-A função gaussiana de espaço garante que apenas os pixels próximos sejam considerados para desfoque, enquanto a função gaussiana de diferença de intensidade garante que apenas os pixels com intensidades semelhantes ao pixel central sejam considerados para desfoque. 
-Assim ele preserva as bordas já que os pixels nas bordas terão grande variação de intensidade
+Bilateral filtering also takes a Gaussian filter in space, but one more Gaussian filter which is a function of pixel difference. 
+The Gaussian function of space makes sure that only nearby pixels are considered for blurring, 
+while the Gaussian function of intensity difference makes sure that only those pixels with similar intensities to the central pixel are considered for blurring. 
+So it preserves the edges since pixels at edges will have large intensity variation
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).
 
 ## 2D Convolution / filter2D
 
-Função OpenCV: **cv.bilateralFilter**
+OpenCV function: **cv.filter2D**
 
-O OpenCV fornece uma função cv.filter2D() para convoluir um kernel com uma imagem
+OpenCV provides a cv.filter2D() function to convolve a kernel with an image
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).

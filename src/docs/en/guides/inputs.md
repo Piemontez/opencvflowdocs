@@ -1,45 +1,45 @@
 ---
-title: 'Nós de Entrada'
-description: 'OpenCV-Flow Nós de Entrada'
+title: 'Input Nodes'
+description: 'OpenCV-Flow Input Nodes'
 ---
 
-Nós de entradas são componentes que carregam vídeos e imagens ou geram núcleos de dados para serem processados por outros componentes.
+Input nodes are components that load videos and images or generate kernel of data to be processed by other components.
 
-> A saída principal dos nós de entrada é uma matriz do tipo Mat do opencv.js.
-> As saídas podem ter diferentes quantidades de canais de cores.
+> The main output of the input nodes is an opencv.js type Mat matrix.
+> Outputs can have different amounts of color channels.
 
 ## Video Capture
 
-Função OpenCV: **cv.VideoCapture**
+OpenCV function: **cv.VideoCapture**
 
-Componente responsável por capturar o stream de vídeo da câmera conectada ao computador.
+Component responsible for capturing the video stream from the camera connected to the computer.
 
 ![Video Capture](../../assets/inputs/videocapture.png)
 
-As saídas deste componente são:
+The outputs of this component are:
 
-| Saída     | Descrição |
-|-----------|-----------|
-| Out       | Imagem / **Opencv Mat**   |
-| Rows      | Quantidade de linhas      |
-| Cols      | Quantidade de colunas     |
-| Type      | Tipo de Imagem / **Opencv Mat Type**  |
-| Channels  | Quantidade de canais da imagem        |
+| Output    | Description |
+|-----------|-------------|
+| Out       | Image / **Opencv Mat**   |
+| Rows      | Number of lines      |
+| Cols      | Number of columns     |
+| Type      | Type of image / **Opencv Mat Type**  |
+| Channels  | Number of image channels |
 
 ## File Loader
 
-O componente "File Loader" carrega imagens e videos do computador. 
-Os tipos de imagens que a IDE consegue carregar são limitadas aos tipos de imagens que a biblioteca Opencv.js carrega.
+The "File Loader" component loads images and videos from the computer.
+The types of images that the IDE can load are limited to the types of images that the Opencv.js library loads.
 
-Os tipos de saídas deste componente são:
+The output types of this component are:
 
-| Saída     | Descrição |
-|-----------|-----------|
-| Out       | Imagem / **Opencv Mat**   |
-| Rows      | Quantidade de linhas      |
-| Cols      | Quantidade de colunas     |
-| Type      | Tipo de Imagem / **Opencv Mat Type**  |
-| Channels  | Quantidade de canais da imagem        |
+| Output    | Description |
+|-----------|-------------|
+| Out       | Image / **Opencv Mat**   |
+| Rows      | Number of lines      |
+| Cols      | Number of columns    |
+| Type      | Type of image / **Opencv Mat Type**  |
+| Channels  | Number of image channels |
 
 ## Kernel
 
@@ -50,35 +50,34 @@ Os valores da matriz são 0 ou 1.
 
 Os tipos de saídas deste componente são:
 
-| Saída     | Descrição |
-|-----------|-----------|
+| Output    | Description |
+|-----------|-------------|
 | Out       | Imagem / **Opencv Mat**   |
 
 
 ## Mat
 
-O Componente "Mat" cria uma Matriz Mat de saída, conforme o arranjo informado.
-Os valores da matriz podem ser informadas via propriedades do componente.
+The "Mat" Component creates an output Mat Matrix, according to the informed arrangement.
+Array values can be informed via component properties.
 
-Os tipos de saídas deste componente são:
+The output types of this component are:
 
-| Saída     | Descrição |
-|-----------|-----------|
-| Out       | Imagem / **Opencv Mat**   |
-
+| Output    | Description |
+|-----------|-------------|
+| Out       | Image / **Opencv Mat**   |
 
 
 ## Structured Element
 
-Função OpenCV: **cv.getStructuringElement**
+OpenCV function: **cv.getStructuringElement**
 
-O Componente "Structured Element" cria uma imagem estruturada.
-É possível criar uma estrutura do tipo retângulo, círculo ou cruz.
+The "Structured Element" Component creates a structured image.
+It is possible to create a rectangle, circle or cross type structure.
 
 ![Structured Element Capture](../../assets/inputs/structuredelementcapture.png)
 
-Os tipos de saídas deste componente são:
+The output types of this component are:
 
-| Saída     | Descrição |
-|-----------|-----------|
-| Out       | Imagem / **Opencv Mat**   |
+| Output    | Description |
+|-----------|-------------|
+| Out       | Image / **Opencv Mat**   |

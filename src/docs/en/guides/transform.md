@@ -1,20 +1,20 @@
 ---
-title: 'Nós de Transformação'
-description: 'OpenCV-Flow Nós de Transformação'
+title: 'Transformation Knots'
+description: 'OpenCV-Flow Transformation Node'
 ---
 
-Nós de transformação, realizam transformadas matemáticas. Cada transformada possui sua lógica e função particular.
+Transformation nodes perform transformed mathematics. Each transform has its logic and particular function.
 
 ## DFT
 
-Função OpenCV: **cv.dft, cv.getOptimalDFTSize, **
+OpenCV function: **cv.dft, cv.getOptimalDFTSize, **
 
-O componente DFT, realiza a transformada discreta de Fourier.
+The DFT component performs the discrete Fourier transform.
 
-![Arithmétic Operation Sample](../../assets/transform/dft.png)
+![Sample arithmetic operation](../../assets/transform/dft.png)
 
 ## IDFT
 
-Função OpenCV: **cv.dft with cv.DCT_INVERSE**
+OpenCV function: **cv.dft with cv.DCT_INVERSE**
 
-O componente IDFT, realiza a inversa da transformada discreta de Fourier.
+The IDFT component performs the inverse of the discrete Fourier transform.

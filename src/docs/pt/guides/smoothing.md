@@ -51,7 +51,7 @@ Assim ele preserva as bordas já que os pixels nas bordas terão grande variaç�
 
 ## 2D Convolution / filter2D
 
-Função OpenCV: **cv.bilateralFilter**
+Função OpenCV: **cv.filter2D**
 
 O OpenCV fornece uma função cv.filter2D() para convoluir um kernel com uma imagem
 ([OpenCV 4 Docs](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)).

@@ -1,43 +1,42 @@
 ---
-title: 'Nós de Operações Morfológica'
-description: 'OpenCV-Flow Nós de operações Morfológica'
+title: 'Morphological Operations Nodes'
+description: 'OpenCV-Flow Morphological operations nodes'
 ---
 
- A Morfologia Matemática é um instrumento para extração de componentes da imagem, útil para representação e descrição da forma de uma região, 
- como fronteiras, esqueletos, realce, filtragem, segmentação, esqueletização e outros.
+Mathematical Morphology is a tool for extracting image components, useful for representing and describing the shape of a region,
+such as borders, skeletons, highlighting, filtering, segmentation, skeletonization and others.
 
 ## Erode & Dilate
 
-Erosão e dilatação são a base de todas as operações morfológicas de processamento de imagem. 
+Erosion and dilation are the basis of all morphological image processing operations.
 
-Por meio de um elemento estruturante a erosão realizaa uma busca na imagem tal estrutura,
-e cria uma imagem de saida onde cada pixel nesta imagem indica que a estrutura foi localizada.
+By means of a structuring element, erosion performs a search in the image of such a structure,
+and creates an output image where each pixel in this image indicates that the structure has been located.
 
-A dilatação por sua vez, para cada pixel da imagem de entrada que possuir uma informação,
-replica a estrutura na imagem de saída.
+Dilation, in turn, for each pixel of the input image that has information,
+replicates the structure in the output image.
 
 ![Erode & Dilate](../../assets/morphology/erode_dilate.png)
 
-Os tipos de saídas destes componentes são:
+The types of outputs of these components are:
 
-| Saída     | Descrição |
-|-----------|-----------|
-| Out       | Imagem / **Opencv Mat**   |
+| Output    | Description |
+|-----------|-------------|
+| Out       | Imagee / **Opencv Mat**   |
 
 ## Opening & Closing 
 
-A abertura e fechamente são operações que apenas enfileram as operações de erosão e dilatação.
+Opening and closing are operations that only enqueue the erosion and dilation operations.
 
-A abertura realiza a operação erosão seguida da dilatação. 
-Esta sequência de operações resulta na aberturas de estruturas na imagem.
+The opening performs the operation erosion followed by dilation.
+This sequence of operations results in the opening of structures in the image.
 
-O fechamento realiza a operação dilatação seguida da erosão.
-Esta sequência de operações resulta no fechamento de estruturas na imagem.
-
+The closure performs the dilation operation followed by erosion.
+This sequence of operations results in the closure of structures in the image.
 
 ![Fingerprint](../../assets/morphology/fingerprint.png)
 
-Os tipos de saídas destes componentes são:
+The types of outputs of these components are:
 
 | Saída     | Descrição |
 |-----------|-----------|

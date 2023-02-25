@@ -3,38 +3,42 @@ title: 'Nós de Deteclção de Borda'
 description: 'OpenCV-Flow Nós de Deteclção de Borda'
 ---
 
-A detecção de borda é uma técnica de processamento de imagem usada para identificar os limites (bordas) de objetos ou regiões dentro de uma imagem. As bordas estão entre os recursos mais importantes associados às imagens.
+Edge detection is an image processing technique used to identify the boundaries (edges) of objects or regions within an image. 
+Borders are among the most important features associated with images.
 
-A seguir um exemplo de operações de detecção de bordas Canny, Sobel e Laplacian.
+The following is an example of Canny, Sobel, and Laplacian edge detection operations.
 
-![Detecção de bordas](../../assets/edge/edges.jpeg)
+![Edge Detection](../../assets/edge/edges.jpeg)
 
 ## Sobel
 
-Função OpenCV: **cv.Sobel**
+OpenCV function: **cv.Sobel**
 
-Este componente processa a função Sobel do Opencv.js
+This component renders the Sobel function from Opencv.js
 
-## Canny
+## cunning
 
-Função OpenCV: **cv.Canny**
+OpenCV function: **cv.Canny**
 
-Este componente processa a função Canny do Opencv.js
+This component renders the Canny function from Opencv.js
 
 ## Laplacian
 
-Função OpenCV: **cv.Laplacian**
+OpenCV function: **cv.Laplacian**
 
-Este componente processa a função Laplacian do Opencv.js
+This component renders the Laplacian function from Opencv.js
 
 ## Scharr
 
-Função OpenCV: **cv.Scharr**
+OpenCV function: **cv.Scharr**
 
-Este componente processa a função Scharr do Opencv.js
+This component renders the Scharr function from Opencv.js
 
 ## Find Contours
 
-Função OpenCV: **cv.findContours**
+OpenCV function: **cv.findContours**
 
-Este componente processa a função findContours do Opencv.js
+This component handles the findContours function from Opencv.js
+Mais sobre o texto originalÉ necessário fornecer o texto original para ver mais informações sobre a tradução
+Enviar feedback
+Painéis laterais
