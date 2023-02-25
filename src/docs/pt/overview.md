@@ -11,6 +11,8 @@ Através da criação de fluxos de processamento é possível encadear operaçõ
 
 Também é possível criar componentes personalizados e programáveis e adicioná-los nos fluxos de processamento da IDE.
 
+![OpenCV-Flow New Component Example](../assets/new_component.png)
+
 > A biblioteca opencv.js é a base dos processamentos desta IDE.
 > De modo geral, os componentes e nós são apenas instrumentos visuais que realizam funções desta biblioteca. 
 

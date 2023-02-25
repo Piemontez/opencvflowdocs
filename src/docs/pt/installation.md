@@ -7,7 +7,7 @@ Existem duas formas de usar a IDE, de forma online ou instalando a aplicação p
 
 ## Versão Online
 
-Acesse o link [OpenCV-Flow Online](http://online.opencvflow.org/), 
+A versão online esta disponível no link [OpenCV-Flow Online](http://online.opencvflow.org/), 
 
 ## Desktop
 

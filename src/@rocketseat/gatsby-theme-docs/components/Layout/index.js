@@ -37,14 +37,14 @@ export default function Layout({
   const isBrowser = () => typeof window !== "undefined";
   const pathname = isBrowser() ? window.location.pathname : "";
   const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
-  const currLang = groups?.length > 1 ? groups[1] : "pt";
+  const currLang = groups?.length > 1 ? groups[1] : "en";
   const isHome =
     pathname.endsWith("/" + currLang) ||
     pathname.endsWith("/" + currLang + "/");
 
   if (!currLang) {
     if (isBrowser()) {
-      window.location.href += "pt";
+      window.location.href += "en";
     }
     return null;
   }

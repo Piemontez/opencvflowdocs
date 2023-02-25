@@ -11,6 +11,8 @@ Through the creation of processing flows it is possible to chain image processin
 
 You can also create custom, programmable components and add them to the IDE's processing streams.
 
+![OpenCV-Flow New Component Example](../assets/new_component.png)
+
 > The opencv.js library is the processing base of this IDE.
 > Generally speaking, components and nodes are just visual instruments that perform functions in this library.
 
