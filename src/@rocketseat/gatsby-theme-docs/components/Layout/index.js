@@ -39,6 +39,7 @@ export default function Layout({
   const groups = pathname.match(/\/([^/]*)\/{0,1}(.*)/);
   const currLang = groups?.length > 1 ? groups[1] : "en";
   const isHome =
+    !currLang ||
     pathname.endsWith("/" + currLang) ||
     pathname.endsWith("/" + currLang + "/");
 
