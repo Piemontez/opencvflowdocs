@@ -40,6 +40,7 @@ export default function Layout({
   const currLang = groups?.length > 1 ? groups[1] : "en";
   const isHome =
     !currLang ||
+    !pathname ||
     pathname.endsWith("/" + currLang) ||
     pathname.endsWith("/" + currLang + "/");
 
