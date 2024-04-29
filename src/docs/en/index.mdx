@@ -3,20 +3,48 @@ title: 'Overview'
 description: 'OpenCV-Flow Overview'
 ---
 
+<style scoped>
+.top {'{'}
+    padding: 80px 40px; 
+    margin: 0 0 70px  0; 
+    background-color: #eeeeee
+}
+.topcontent {'{'}
+    width: 100%; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    display: flex;
+}
+.topleft, .topright {'{'}
+    flex: 1
+}
+.topimg {'{'}
+    -webkit-transform: scale(0.9) perspective(800px)
+    rotateY(+41deg) rotateX(5deg) rotate(2deg);
+    transform: scale(1) perspective(800px) rotateY(+41deg)
+    rotateX(5deg) rotate(2deg);
+}
+@media only screen and (max-width: 780px) {'{'}
+  .topcontent {'{'}
+    flex-direction: column;
+  }
+  .topleft {'{'}
+    margin-left: 13%;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+</style>
 
-<div style="padding: 80px 0; margin: 0 0 70px  0; background-color: #eeeeee">
-    <div style="width: 100%; max-width: 1400px; margin: 0 auto; display: flex; flex-direction: row;">
-        <div style="flex: 1">
-            <div style="
-                -webkit-transform: scale(0.9) perspective(800px)
-                rotateY(+41deg) rotateX(5deg) rotate(2deg);
-                transform: scale(1) perspective(800px) rotateY(+41deg)
-                rotateX(5deg) rotate(2deg);
-            ">
+<div class="top">
+    <div class="topcontent">
+        <div class="topleft">
+            <div class="topimg">
                 <img src="../assets/ilustracao_sistema.png" />
             </div>
         </div>
-        <div style="flex: 1">
+        <div class="topright">
             <div class="work-text-full">
             <div class="work-text">
                 <h1>Computer Vision IDE</h1>

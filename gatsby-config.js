@@ -58,7 +58,7 @@ module.exports = {
         name: `OpenCV-Flow Doc`,
         short_name: `OpenCV-Flow Doc`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#eeeeee`,
         display: `standalone`,
         icon: `static/logo.png`,
       },
