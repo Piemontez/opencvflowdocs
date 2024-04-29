@@ -7,25 +7,6 @@
   link: '/en/overview'
 - label: 'Installation & Run'
   link: '/en/installation'
-- label: Guia
-  link: '/en'
-  items:
-    - label: Input Nodes
-      link: /en/guides/inputs
-    - label: Converter Nodes
-      link: /en/guides/conversors
-    - label: Arithmetic Operations Nodes
-      link: /en/guides/arithmetic
-    - label: Smoothing Nodes
-      link: /en/guides/smoothing
-    - label: Morphology Nodes
-      link: /en/guides/morphology
-    - label: Edge Detection Nodes
-      link: /en/guides/edge
-    - label: Segmentation Nodes
-      link: /en/guides/segmentation
-    - label: Transformation Nodes
-      link: /en/guides/transform
 - label: Dev Components
   link: '/en'
   items:
@@ -39,15 +20,6 @@
       link: '/en/components/custom'
     - label: 'Node Properties'
       link: '/en/components/nodeproperties'
-- label: Samples
-  link: '/en'
-  items:
-    - label: Background Remove
-      link: /en/samples/bg_remove
-    - label: Edge Detection
-      link: /en/samples/edge
-    - label: Morphological Transformations
-      link: /en/samples/morphology
 - label: Useful Links
   link: '/en'
   items:
@@ -65,25 +37,6 @@
   link: '/pt/overview'
 - label: 'Instalação e Execução'
   link: '/pt/installation'
-- label: Guia
-  link: '/pt'
-  items:
-    - label: Nós de Entradas
-      link: /pt/guides/inputs
-    - label: Nós Conversores
-      link: /pt/guides/conversors
-    - label: Nós de Operações Aritiméticas
-      link: /pt/guides/arithmetic
-    - label: Nós de Alisamento
-      link: /pt/guides/smoothing
-    - label: Nós de Morfologia
-      link: /pt/guides/morphology
-    - label: Nós de Detecção de Bordas
-      link: /pt/guides/edge
-    - label: Nós de Segmentação
-      link: /pt/guides/segmentation
-    - label: Nós de Transformação
-      link: /pt/guides/transform
 - label: Dev Componentes
   link: '/pt'
   items:
@@ -97,15 +50,6 @@
       link: '/pt/components/custom'
     - label: 'Node Properties'
       link: '/pt/components/nodeproperties'
-- label: Exemplos
-  link: '/pt'
-  items:
-    - label: Remoção de Fundo
-      link: /pt/samples/bg_remove
-    - label: Detecção de Bordas
-      link: /pt/samples/edge
-    - label: Transformação morfológica
-      link: /pt/samples/morphology
 - label: Links Úteis
   link: '/pt'
   items:

@@ -18,4 +18,4 @@ Também é possível criar componentes personalizados e programáveis e adicion�
 
 > É altamente recomendado o conhecimento básico sobre a biblioteca opencv.js.
 
-A IDE foi construído a partir das bibliotecas OpenCV.js, React, React-Flow e MobX. Seu estilo foi customizado a partir do bootstrap. O mecanismo operacional é construído na estrutura do elétron.
+A IDE foi construído a partir das bibliotecas OpenCV.js, React, React-Flow. Seu estilo foi customizado a partir do bootstrap. O mecanismo operacional é construído na estrutura do elétron.
