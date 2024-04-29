@@ -9,7 +9,7 @@ Através da criação de fluxos de processamento é possível encadear operaçõ
 
 ![OpenCV-Flow Example](../assets/overview.png)
 
-Também é possível criar componentes personalizados e programáveis e adicioná-los nos fluxos de processamento da IDE.
+Também é possível criar componentes programáveis e adicioná-los nos fluxos de processamento da IDE.
 
 ![OpenCV-Flow New Component Example](../assets/new_component.png)
 
@@ -18,4 +18,4 @@ Também é possível criar componentes personalizados e programáveis e adicion�
 
 > É altamente recomendado o conhecimento básico sobre a biblioteca opencv.js.
 
-A IDE foi construído a partir das bibliotecas OpenCV.js, React, React-Flow. Seu estilo foi customizado a partir do bootstrap. O mecanismo operacional é construído na estrutura do elétron.
+A IDE foi construído a partir das bibliotecas OpenCV.js, React, React-Flow. Seu estilo foi customizado a partir do bootstrap.

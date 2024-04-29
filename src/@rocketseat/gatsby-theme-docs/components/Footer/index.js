@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterStyled, FooterGridStyled } from "./styles";
+import { FooterStyled, FooterGridStyled, A, P } from "./styles";
 
 const h2Style = { color: "#FFF", cursor: 'pointer' };
 const h3Style = { color: "#FFF" };
@@ -18,32 +18,32 @@ export default function Footer() {
             >
               By Piemontez
             </h2>
-            <p>OpenCV-Flow possui código livre</p>
+            <P>OpenCV-Flow possui código livre</P>
           </div>
           <div style={{ flex: 2 }}>
             <div style={{ display: "flex", flexDirection: "row" }}>
               <div style={{ flex: 1 }}>
                 <h3 style={h3Style}>Documentação</h3>
                 <p>
-                  <a href="/pt/installation">Instalação</a>
+                  <A href="/pt/installation">Instalação</A>
                 </p>
                 <p>
-                  <a href="/pt/components">Componentes</a>
+                  <A href="/pt/components">Componentes</A>
                 </p>
               </div>
               <div style={{ flex: 1 }}>
                 <h3 style={h3Style}>Visão Computacional</h3>
                 <p>
-                  <a href="https://visaocomputacional.com.br/">Blog</a>
+                  <A href="https://visaocomputacional.com.br/">Blog</A>
                 </p>
               </div>
               <div style={{ flex: 1 }}>
                 <h3 style={h3Style}>Thalamus</h3>
                 <p>
-                  <a href="http://thalamus.digital/">About</a>
+                  <A href="http://thalamus.digital/">About</A>
                 </p>
                 <p>
-                  <a href="https://thalamus.digital/team/">Team</a>
+                  <A href="https://thalamus.digital/team/">Team</A>
                 </p>
               </div>
             </div>

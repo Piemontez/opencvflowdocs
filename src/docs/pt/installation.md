@@ -3,15 +3,11 @@ title: 'Instalação e Execução'
 description: 'OpenCV-Flow Instalação e Execução'
 ---
 
-Existem duas formas de usar a IDE, de forma online ou instalando a aplicação para uso desktop. 
+Para rodar a aplicação instale o NodeJS 18+ e realize as etapas descritas em Build e Run.
 
-## Versão Online
+## Build
 
 A versão online esta disponível no link [OpenCV-Flow Online](http://online.opencvflow.org/), 
-
-## Desktop
-
-Para instalar, baixe o projeto do git e rode o comando de instalação do npm conforme abaixo.
 
 ```bash
 git clone https://github.com/Piemontez/opencvflow.git
@@ -28,7 +24,7 @@ Dependendo da necessidade dos testes é recomendado utilizar a versão desktop.
 
 O OpencvFlow requer node instalado no computador.
 
-Talvez algumas dependências internas também precisem do [node-gyp](https://www.npmjs.com/package/node-gyp) instalado no seu computador.
+Talvez algumas dependências internas dependam do [node-gyp](https://www.npmjs.com/package/node-gyp) instalado no seu computador.
 E por causa disso você precisa instalar o Python conforme instruído pelo node-gyp.
 
 ## Run

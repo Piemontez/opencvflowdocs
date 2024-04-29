@@ -9,7 +9,7 @@ Through the creation of processing flows it is possible to chain image processin
 
 ![OpenCV-Flow Example](../assets/overview.png)
 
-You can also create custom, programmable components and add them to the IDE's processing streams.
+It is also possible to create programmable components and add them to the IDE's processing flows.
 
 ![OpenCV-Flow New Component Example](../assets/new_component.png)
 
@@ -18,4 +18,4 @@ You can also create custom, programmable components and add them to the IDE's pr
 
 > Basic knowledge of the opencv.js library is highly recommended.
 
-The IDE was built from OpenCV.js, React, React-Flow libraries. Its style was customized from bootstrap. The operating mechanism is built into the structure of the electron.
+The IDE was built from OpenCV.js, React, React-Flow libraries. Its style was customized from bootstrap.

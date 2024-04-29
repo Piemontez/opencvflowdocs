@@ -76,7 +76,7 @@ export const NavBar = styled.div`
   flex-basis: auto;
   align-items: center;
   justify-content: space-between;
-  background-color: #343a40;
+  background-color: rgb(33, 37, 41);
   color: #fafafa;
   border-bottom: 1px solid #dddddd;
 `;

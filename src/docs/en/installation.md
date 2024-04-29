@@ -3,15 +3,11 @@ title: 'Installation & Run'
 description: 'OpenCV-Flow Installation'
 ---
 
-There are two ways to use the IDE, online or installing the application for desktop use.
+To run the application, install NodeJS 18+ and perform the steps described in Build and Run.
 
 ## Online Version
 
 Acesse from the link [OpenCV-Flow Online](http://online.opencvflow.org/), 
-
-## Desktop
-
-To install, download the project from git and run the npm install command as below.
 
 ```bash
 git clone https://github.com/Piemontez/opencvflow.git
