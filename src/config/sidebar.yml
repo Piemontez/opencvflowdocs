@@ -12,8 +12,6 @@
   items:
     - label: 'IO Component'
       link: '/en/components/io'
-    - label: 'IO Endless Component'
-      link: '/en/components/ioendless'
     - label: 'Output Component'
       link: '/en/components/output'
     - label: 'Custom Component'
@@ -42,8 +40,6 @@
   items:
     - label: 'IO Component'
       link: '/pt/components/io'
-    - label: 'IO Endless Component'
-      link: '/pt/components/ioendless'
     - label: 'Output Component'
       link: '/pt/components/output'
     - label: 'Custom Component'
